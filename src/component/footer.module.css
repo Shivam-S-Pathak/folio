@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #1a0b21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconYT {
+    color: white;
+    font-size: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.iconYT:hover {
+    color: #ff0000;
+    background-color: #ffff;
+    border-radius: 8%;
+
+}
+
+.iconLI {
+    color: white;
+    font-size: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.iconLI:hover {
+    color: #0077b5;
+    border-radius: 8%;
+    background-color: #ffff;
+}
+
+.iconX {
+    color: white;
+    font-size: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.iconX:hover {
+    color: #000000;
+    border-radius: 4px;
+    background-color: #ffff;
+}
+
+.iconGH {
+    color: white;
+    font-size: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.iconGH:hover {
+    color: #000000;
+    border-radius: 4px;
+    background-color: #ffff;
+}
+
+.iconMAIL {
+    color: white;
+    font-size: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.iconMAIL:hover {
+    color: #0b54f3;
+    border-radius: 4px;
+    background-color: #ffff;
+}
+
+.contentBox {
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 4%;
+}
+
+.iconRoom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.iconRoom:hover {
+    transform: scale(1.2);
+}
+
+.figureCap {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

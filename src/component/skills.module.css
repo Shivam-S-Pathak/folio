@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3F3244;
+}
+
+.heading{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align:center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3vmin;
+}
+.contentSection{
+    width: 95%;
+    min-height: 70vh;
+    max-height: 230vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1%;
+    flex-wrap: wrap;
+}
+
+.Frontend{
+    width:50vmin;
+    height:50vh ;
+    border: 1px solid #aa95a5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    margin: 2%;
+    padding: 1%;
+}
+.Frontend:hover{
+    box-shadow: -11px -27px 47px -6px #aa95a5;
+    border: none;
+    transform: scale(1.05);
+}
+.Backend{
+    width:50vmin;
+    height:50vh ;
+    border: 1px solid #aa95a5;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    margin: 2%;
+    padding: 1%;
+    transition: all 0.3s ease-in-out;
+}
+.Backend:hover{
+    box-shadow:-11px -27px 47px -6px #aa95a5;
+    border: none;
+    transform: scale(1.05);
+}
+.Database{
+    width:50vmin;
+    height:50vh ;
+    border: 1px solid #aa95a5;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    margin: 2%;
+    padding: 1%;
+    transition: all 0.3s ease-in-out;
+}
+.Database:hover{
+    box-shadow:-11px -27px 47px -6px #aa95a5;
+    border: none;
+    transform: scale(1.05);
+}
+.Techtitles{
+    color: #aa95a5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4vmin;
+    text-decoration: underline;
+}
+.technologyContainer{
+    width: 90%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+.techHTML{
+font-size:3vmin;
+padding: 2%;
+border-radius: 10px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid #e34c26;
+color: #e34c26;
+}
+.techHTML:hover{
+    background-color: #e34c26;
+    color:#ebebeb;
+}
+
+.techCSS{
+    font-size:3vmin;
+padding: 2%;
+border-radius: 10px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid #264de4;
+color: #2965f1;
+}
+.techCSS:hover{
+    background-color: #264de4;
+    color:#ebebeb;
+}
+.techJS{
+    font-size:3vmin;
+padding: 2%;
+border-radius: 10px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid #f0db4f;
+color: #f0db4f;
+}
+.techJS:hover{
+    background-color: #f0db4f;
+    color:#323330;
+}
+.techTailwind{
+    font-size:3vmin;
+padding: 2%;
+border-radius: 10px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid #18adde;
+color: #18adde;
+}
+.techTailwind:hover{
+    background-color: #18adde;
+    color:#ebebeb;
+}
+.techBootstrap{
+    font-size:3vmin;
+padding: 2%;
+border-radius: 10px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid #563d7c;
+color: #563d7c;
+}
+.techBootstrap:hover{
+    background-color: #563d7c;
+    color:#ffff;
+}
+.techReact{
+    font-size:3vmin;
+padding: 2%;
+border-radius: 10px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid #61dbfb;
+color: #61dbfb;
+}
+.techReact:hover{
+    background-color: #61dbfb;
+    color:#ffff;
+}
+
+.techDjango{
+    font-size:3vmin;
+padding: 2%;
+border-radius: 10px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid #092e20;
+color: #092e20;
+}
+.techDjango:hover{
+    background-color: #092e20;
+    color:#ffff;
+}
+.techNode{
+    font-size:3vmin;
+padding: 2%;
+border-radius: 10px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid #306428;
+color: #306428;
+}
+.techNode:hover{
+    background-color: #306428;
+    color:#2d3338;
+}
+.techExpress{
+    font-size:3vmin;
+padding: 2%;
+border-radius: 10px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid #f0db4f;
+color: #f0db4f;
+}
+.techExpress:hover{
+    background-color: #f0db4f;
+    color:#323330;
+}
+.tecMySQLite{
+    font-size:3vmin;
+padding: 2%;
+border-radius: 10px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid #1439b7;
+color: #1439b7;
+}
+.tecMySQLite:hover{
+    background-color: #1439b7;
+    color:#0d2577;
+}
+.techMongo{
+    font-size:3vmin;
+padding: 2%;
+border-radius: 10px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid #00ed64;
+color: #00ed64;
+}
+.techMongo:hover{
+    background-color: #00ed64;
+    color:#001e2b;
+}
+.techPostgres{
+    font-size:3vmin;
+padding: 2%;
+border-radius: 10px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid #2965f1;
+color: #2965f1;
+}
+.techPostgres:hover{
+    background-color: #2965f1;
+    color:#000000;
+}
+.techMySQL{
+    font-size:3vmin;
+padding: 2%;
+border-radius: 10px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid #f29111;
+color: #f29111;
+}
+.techMySQL:hover{
+    background-color: #f29111;
+    color:#00758f;
+}
