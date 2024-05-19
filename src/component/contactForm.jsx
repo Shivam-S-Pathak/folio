@@ -97,13 +97,12 @@ const Contact = () => {
                         <legend className={Styles.legend}>Enter your contact number here</legend>
                         <input type="number" name='contactNumber' value={formData.contactNumber} placeholder='Enter your contact number here' onChange={changeHandler} ref={(el) => (inputRefs.current.push(el))} autoComplete='off' />
                     </fieldset>
-                </div>
-                <div className={Styles.personalContact}>
                     <fieldset className={`${Styles.textAreaFieldset}`}>
                         <legend className={Styles.legend}>Enter the reason of contact</legend>
                         <textarea name="reason" value={formData.reason} placeholder='Enter the reason of contact' onChange={changeHandler} ref={(el) => (inputRefs.current.push(el))}  ></textarea>
                     </fieldset>
                 </div>
+               
                 <button type='submit'>Submit</button>
             </form >
         </div >

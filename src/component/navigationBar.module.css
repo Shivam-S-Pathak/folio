@@ -3,9 +3,13 @@
     padding: 0;
 }
 .nagivate{
-    background-color: #602367;
+    background-color: #553b61;
     width:100%;
     height:max-content;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+
 }
 .anchorContainer{
     display: flex;

@@ -15,7 +15,7 @@ const NavigationBar = () => {
                 <a href="#home" className={styles.anchor} onClick={(e) => {
                      e.preventDefault();
                     scrollToComponent("home")
-                }} id="home1">Home</a>
+                }} id="home1">About me</a>
                 <a href="#projects" className={styles.anchor} onClick={(e) => {
                      e.preventDefault();
                     scrollToComponent("projects")

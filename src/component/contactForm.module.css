@@ -21,7 +21,7 @@
 }
 
 .personalContact {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,10 +32,10 @@
 
 .fieldset{
     margin: 1%;
-    width: 68vmin;
+    width: 66vmin;
     height: 9vh;
     color:white;
-    border-radius:50px;
+    border-radius:2vmin;
     background-color: #bfc3ba1d;
     display: flex;
     justify-content: center;
@@ -144,10 +144,10 @@ textarea {
     cursor:pointer;
   }
 .textAreaFieldset{
-    width: 165vmin;
+    width: 93%;
     height: 20vh;
     grid-row:1;
-    border-radius: 20px;
+    border-radius: 2vmin;
     background-color: #bfc3ba1d;
     display: flex;
     justify-content: center;
@@ -157,15 +157,15 @@ textarea {
     border-color: #bfc3baa9;
     border: none;
     transition: all 0.3s ease-in-out;
-    margin-top: 1%;
+   margin-top: 1%;
 }
 
 button {
-    width: 200px;
-    height: 6vh;
-    border-radius: 50px;
+    width: 20vmin;
+    height: 3vmax;
+    border-radius: 20vmin;
     margin-top: 3%;
-    font-size: 150%;
+    font-size: 3vmin;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #1a0b21;
     outline: none;

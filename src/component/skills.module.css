@@ -31,9 +31,8 @@
 
 .Frontend{
     width:50vmin;
-    height:50vh ;
-    border: 1px solid #aa95a5;
-    border-radius: 20px;
+    height:50vmin ;
+    border-radius: 2vmin;
     display: flex;
     justify-content: center;
     flex-direction:column;
@@ -41,6 +40,7 @@
     transition: all 0.3s ease-in-out;
     margin: 2%;
     padding: 1%;
+    background-color: #2f223590;
 }
 .Frontend:hover{
     box-shadow: -11px -27px 47px -6px #aa95a5;
@@ -49,9 +49,9 @@
 }
 .Backend{
     width:50vmin;
-    height:50vh ;
-    border: 1px solid #aa95a5;
-    border-radius: 30px;
+    height:50vmin ;
+    border-radius: 2vmin;
+    background-color: #2f223590;
     display: flex;
     justify-content: center;
     flex-direction:column;
@@ -67,9 +67,9 @@
 }
 .Database{
     width:50vmin;
-    height:50vh ;
-    border: 1px solid #aa95a5;
-    border-radius: 30px;
+    height:50vmin ;
+    background-color: #2f223590;
+    border-radius: 2vmin;
     display: flex;
     justify-content: center;
     flex-direction:column;
@@ -91,8 +91,9 @@
 }
 .technologyContainer{
     width: 90%;
-    height: 55vh;
+    height: 50vmin;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -101,158 +102,197 @@
 .techHTML{
 font-size:3vmin;
 padding: 2%;
-border-radius: 10px;
+border-radius: 1vmin;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 border: 2px solid #e34c26;
 color: #e34c26;
+transform: rotate(10deg);
+transition: all 0.3s ease-in-out;
 }
 .techHTML:hover{
     background-color: #e34c26;
     color:#ebebeb;
+    transform: rotate(0);
 }
 
 .techCSS{
     font-size:3vmin;
 padding: 2%;
-border-radius: 10px;
+border-radius: 1vmin;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 border: 2px solid #264de4;
 color: #2965f1;
+transform: rotate(-10deg);
+transition: all 0.3s ease-in-out;
 }
 .techCSS:hover{
     background-color: #264de4;
     color:#ebebeb;
+    transform: rotate(0);
 }
 .techJS{
     font-size:3vmin;
 padding: 2%;
-border-radius: 10px;
+border-radius: 1vmin;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 border: 2px solid #f0db4f;
 color: #f0db4f;
+transform: rotate(-5deg);
+transition: all 0.3s ease-in-out;
 }
 .techJS:hover{
     background-color: #f0db4f;
     color:#323330;
+    transform: rotate(0);
 }
 .techTailwind{
     font-size:3vmin;
 padding: 2%;
-border-radius: 10px;
+border-radius:  1vmin;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 border: 2px solid #18adde;
 color: #18adde;
+transform: rotate(-10deg);
+transition: all 0.3s ease-in-out;
 }
 .techTailwind:hover{
     background-color: #18adde;
     color:#ebebeb;
+    transform: rotate(0);
 }
 .techBootstrap{
     font-size:3vmin;
 padding: 2%;
-border-radius: 10px;
+border-radius:  1vmin;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 border: 2px solid #563d7c;
 color: #563d7c;
+transform: rotate(5deg);
+transition: all 0.3s ease-in-out;
 }
 .techBootstrap:hover{
     background-color: #563d7c;
     color:#ffff;
+    transform: rotate(0);
 }
 .techReact{
     font-size:3vmin;
 padding: 2%;
-border-radius: 10px;
+border-radius:  1vmin;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 border: 2px solid #61dbfb;
 color: #61dbfb;
+transform: rotate(20deg);
+transition: all 0.3s ease-in-out;
 }
 .techReact:hover{
     background-color: #61dbfb;
     color:#ffff;
+    transform: rotate(0);
 }
 
 .techDjango{
     font-size:3vmin;
 padding: 2%;
-border-radius: 10px;
+border-radius:  1vmin;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
-border: 2px solid #092e20;
-color: #092e20;
+border: 2px solid #159866;
+color: #159866;
+transition: all 0.3s ease-in-out;
+transform: rotate(-8deg);
 }
 .techDjango:hover{
-    background-color: #092e20;
+    background-color: #159866;
     color:#ffff;
+    transform: rotate(0);
 }
 .techNode{
     font-size:3vmin;
 padding: 2%;
-border-radius: 10px;
+border-radius:  1vmin;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 border: 2px solid #306428;
 color: #306428;
+transform: rotate(20deg);
+transition: all 0.3s ease-in-out;
 }
 .techNode:hover{
     background-color: #306428;
     color:#2d3338;
+    transform: rotate(0);
 }
 .techExpress{
     font-size:3vmin;
 padding: 2%;
-border-radius: 10px;
+border-radius:  1vmin;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 border: 2px solid #f0db4f;
 color: #f0db4f;
+transform: rotate(-10deg);
+transition: all 0.3s ease-in-out;
 }
 .techExpress:hover{
     background-color: #f0db4f;
     color:#323330;
+    transform: rotate(0);
 }
 .tecMySQLite{
     font-size:3vmin;
 padding: 2%;
-border-radius: 10px;
+border-radius:  1vmin;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 border: 2px solid #1439b7;
 color: #1439b7;
+transform: rotate(20deg);
+transition: all 0.3s ease-in-out;
 }
 .tecMySQLite:hover{
     background-color: #1439b7;
     color:#0d2577;
+    transform: rotate(0);
 }
 .techMongo{
     font-size:3vmin;
 padding: 2%;
-border-radius: 10px;
+border-radius:  1vmin;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 border: 2px solid #00ed64;
 color: #00ed64;
+transition: all 0.3s ease-in-out;
+transform: rotate(-5deg);
 }
 .techMongo:hover{
     background-color: #00ed64;
     color:#001e2b;
+    transform: rotate(0);
 }
 .techPostgres{
     font-size:3vmin;
 padding: 2%;
-border-radius: 10px;
+border-radius:  1vmin;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 border: 2px solid #2965f1;
 color: #2965f1;
+transition: all 0.3s ease-in-out;
+transform: rotate(-5deg);
 }
 .techPostgres:hover{
     background-color: #2965f1;
     color:#000000;
+    transform: rotate(0);
 }
 .techMySQL{
     font-size:3vmin;
 padding: 2%;
-border-radius: 10px;
+border-radius:  1vmin;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 border: 2px solid #f29111;
 color: #f29111;
+transform: rotate(10deg);
+transition: all 0.3s ease-in-out;
 }
 .techMySQL:hover{
     background-color: #f29111;
     color:#00758f;
+    transform: rotate(0);
 }

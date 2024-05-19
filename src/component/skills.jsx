@@ -2,7 +2,7 @@ import Styles from './skills.module.css';
 
 const Skills = () => {
     return <>
-        <div className={Styles.skills} id='techStack'>
+        <div className={Styles.skills} id='techStack' >
             <div className={Styles.heading}>
                 <h1>Tech Stack</h1>
             </div>
@@ -24,7 +24,7 @@ const Skills = () => {
                         <label className={Styles.techDjango}>Django</label>
                         <label className={Styles.techNode}>Node.js</label>
                         <label className={Styles.techExpress}>Express.js</label>
-                        
+
                     </article>
                 </section>
                 <section className={Styles.Database}>
@@ -32,8 +32,8 @@ const Skills = () => {
                     <article className={Styles.technologyContainer}>
                         <label className={Styles.tecMySQLite}>MySQLite</label>
                         <label className={Styles.techMongo}>MongoDB</label>
-                        <label className={Styles.techPostgres}>PostgresSQL</label>
                         <label className={Styles.techMySQL}>MySQL</label>
+                        <label className={Styles.techPostgres}>PostgresSQL</label>
                     </article>
                 </section>
             </main>

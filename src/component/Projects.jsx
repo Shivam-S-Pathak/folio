@@ -6,6 +6,9 @@ const Projects = () => {
             <div className={Styles.heading}>
                 <h1>Projects</h1>
             </div>
+            <main>
+                
+            </main>
         </div>
     </>
 }
