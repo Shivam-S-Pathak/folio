@@ -1,0 +1,49 @@
+.sideBar {
+    position: absolute;
+    top:0;
+    background-color: #321e3b;
+    height: 100vh;
+    width: 30vh;
+    transition: all 0.3s ease-in-out;
+    animation: slideleft 0.3s ease-in-out;
+    
+}
+
+@keyframes slideleft {
+   from{
+    left: -100%;
+   }
+   to {
+    left: 0;
+   }
+}
+
+.sideBarContent{
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    margin-top: 50%;
+    margin-left: 8%;
+    width: 100%;
+    height:50vh;
+}
+.label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.Icon{
+    font-size:30px;
+    color: white;
+}
+.labelNicon{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.labelNicon:active{
+    transform:scale(0.9);
+   
+}
