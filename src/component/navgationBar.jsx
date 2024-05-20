@@ -50,8 +50,11 @@ const NavigationBar = () => {
 
             <div className={`${styles.menuIcon} ${isIconVisible ? styles.showMenu : styles.hideMenu}`} onClick={toggle}>
                 {
-                    isSideVisible ? <RxCross2 className={styles.cross} /> : <CgMenuLeftAlt className={styles.threeLines} />
+                    isSideVisible ? <RxCross2 /> : <CgMenuLeftAlt/>
                 }
+            </div>
+            <div className={`${styles.portfolioname} ${isIconVisible ? styles.showMenu : styles.hideMenu}`}>
+                Shivam's Portfolio
             </div>
             <div className={`${styles.anchorContainer} ${isMenuVisible ? styles.showMenu : styles.hideMenu}`}>
                 <a href="#home" className={styles.anchor} onClick={(e) => {

@@ -24,7 +24,7 @@
     transition: all 0.3s ease-in-out;
 }
 .anchor{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:1.6rem;
     color: #ffffff;
     transition: all 0.1s ease-in-out;
@@ -53,6 +53,14 @@
     
 }
 
+.portfolioname{
+    display: flex;
+    width: 100%;
+    font-size: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 
 .hideMenu{
     display: none;
