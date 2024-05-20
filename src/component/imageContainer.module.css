@@ -7,7 +7,7 @@
     width: 100%;
     min-height: 40vh;
     max-height: 100vh;
-    background-image: url('background_img.jpg');
+    background-image: url('/background_img.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size:105% 105%;
