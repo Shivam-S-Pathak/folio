@@ -22,6 +22,7 @@ const ImgContainer = () => {
     }, []);
     return <>
         <div className={Styles.imageBox} id='home'>
+
             <div className={Styles.blurred}>
                 <header className={Styles.dp}>
                     <img src="\bg_thumb-removebg-preview.png" alt="Display picture" className={Styles.picture} />
