@@ -1,0 +1,39 @@
+
+.mainContainer{
+    height: 31rem;
+    width: 23.3rem;
+    background-color: rgb(252, 255, 251);
+    border-radius: 1vmin;
+    overflow: hidden;
+}
+.imgContainer{
+    height: 23.3rem;
+    width: 100%;
+}
+.title{
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap:9%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.label{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.discription{
+    font-size: 1rem;
+}
+.anchorLink{
+text-decoration: none;
+color: black;
+transition: all 0.3s ease-in-out;
+}
+.anchorLink:hover{
+    text-decoration: none;
+    transform: scale(1.05);
+}

@@ -1,7 +1,7 @@
 .sideBar {
     position: absolute;
     top:0;
-    background-color: #321e3b;
+    background-color:rgb(20, 16, 16);
     height: 100vh;
     width: 30vh;
     transition: all 0.3s ease-in-out;
@@ -33,7 +33,7 @@
     color: white;
 }
 .Icon{
-    font-size:30px;
+    font-size:23px;
     color: white;
 }
 .labelNicon{

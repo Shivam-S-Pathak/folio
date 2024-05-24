@@ -74,37 +74,40 @@ const Contact = () => {
         <div className={Styles.formContainer} id='contactMe'>
             <div className={Styles.header}>
                 <h1>Contact me</h1>
+                <hr className={Styles.line} />
             </div>
-            <form onSubmit={submitHandler} className={Styles.formItems}>
+            <div className={Styles.contentContainer} >
+                <form onSubmit={submitHandler} className={Styles.formItems}>
 
-                <div className={Styles.personalContact}>
-                    <fieldset className={`${Styles.fieldset}`}>
-                        <legend className={Styles.legend}>Enter your first name here *</legend>
-                        <input type="text" name='firstName' value={formData.firstName} placeholder='Enter your first name here *' onChange={changeHandler} required ref={(el) => (inputRefs.current.push(el))} autoComplete='off' />
-                    </fieldset>
+                    <div className={Styles.personalContact}>
+                        <fieldset className={`${Styles.fieldset}`}>
+                            <legend className={Styles.legend}>Enter your first name here *</legend>
+                            <input type="text" name='firstName' value={formData.firstName} placeholder='Enter your first name here *' onChange={changeHandler} required ref={(el) => (inputRefs.current.push(el))} autoComplete='off' />
+                        </fieldset>
 
-                    <fieldset className={`${Styles.fieldset}`}>
-                        <legend className={Styles.legend}>Enter your last name here *</legend>
-                        <input type="text" name='lastName' value={formData.lastName} placeholder='Enter your last name here *' onChange={changeHandler} ref={(el) => (inputRefs.current.push(el))} autoComplete='off' required />
-                    </fieldset>
-                </div>
-                <div className={Styles.personalContact}>
-                    <fieldset className={`${Styles.fieldset}`}>
-                        <legend className={Styles.legend}>Enter your email here</legend>
-                        <input type="email" name='email' value={formData.email} placeholder='Enter your email here *' onChange={changeHandler} ref={(el) => (inputRefs.current.push(el))} autoComplete='off' required />
-                    </fieldset>
-                    <fieldset className={`${Styles.fieldset}`}>
-                        <legend className={Styles.legend}>Enter your contact number here</legend>
-                        <input type="number" name='contactNumber' value={formData.contactNumber} placeholder='Enter your contact number here' onChange={changeHandler} ref={(el) => (inputRefs.current.push(el))} autoComplete='off' />
-                    </fieldset>
-                    <fieldset className={`${Styles.textAreaFieldset}`}>
-                        <legend className={Styles.legend}>Enter the reason of contact</legend>
-                        <textarea name="reason" value={formData.reason} placeholder='Enter the reason of contact' onChange={changeHandler} ref={(el) => (inputRefs.current.push(el))}  ></textarea>
-                    </fieldset>
-                </div>
-               
-                <button type='submit'>Submit</button>
-            </form >
+                        <fieldset className={`${Styles.fieldset}`}>
+                            <legend className={Styles.legend}>Enter your last name here *</legend>
+                            <input type="text" name='lastName' value={formData.lastName} placeholder='Enter your last name here *' onChange={changeHandler} ref={(el) => (inputRefs.current.push(el))} autoComplete='off' required />
+                        </fieldset>
+                    </div>
+                    <div className={Styles.personalContact}>
+                        <fieldset className={`${Styles.fieldset}`}>
+                            <legend className={Styles.legend}>Enter your email here</legend>
+                            <input type="email" name='email' value={formData.email} placeholder='Enter your email here *' onChange={changeHandler} ref={(el) => (inputRefs.current.push(el))} autoComplete='off' required />
+                        </fieldset>
+                        <fieldset className={`${Styles.fieldset}`}>
+                            <legend className={Styles.legend}>Enter your contact number here</legend>
+                            <input type="number" name='contactNumber' value={formData.contactNumber} placeholder='Enter your contact number here' onChange={changeHandler} ref={(el) => (inputRefs.current.push(el))} autoComplete='off' />
+                        </fieldset>
+                        <fieldset className={`${Styles.textAreaFieldset}`}>
+                            <legend className={Styles.legend}>Enter the reason of contact</legend>
+                            <textarea name="reason" value={formData.reason} placeholder='Enter the reason of contact' onChange={changeHandler} ref={(el) => (inputRefs.current.push(el))}  ></textarea>
+                        </fieldset>
+                    </div>
+
+                    <button type='submit'>Submit</button>
+                </form >
+            </div>
         </div >
     </>
 };

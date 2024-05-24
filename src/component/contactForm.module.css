@@ -1,25 +1,37 @@
 .formContainer {
     width: 100%;
-    background-color: #2F2235;
+    background-color: rgba(0, 0, 0, 0.881);
 }
 
 .header {
     padding-top: 2%;
-    text-align: center;
+    text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 3vmin;
+    font-size: 1.5vmin;
+    margin-left: 5%;
+    color: white;
+
+}
+.line{
+   border-color:white;
+   margin-right: 5%;
 }
 
 .formItems {
-    width: 100%;
-    min-height: 80vh;
-    max-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 3%;
+    margin: 2% 0 5% 0;
 }
 
+.contentContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .personalContact {
     width: 80%;
     display: flex;
@@ -32,7 +44,7 @@
 
 .fieldset{
     margin: 1%;
-    width: 66vmin;
+    width:66vmin;
     height: 9vh;
     color:white;
     border-radius:2vmin;
@@ -144,7 +156,7 @@ textarea {
     cursor:pointer;
   }
 .textAreaFieldset{
-    width: 93%;
+    width: 66vmin;
     height: 20vh;
     grid-row:1;
     border-radius: 2vmin;
@@ -164,10 +176,10 @@ button {
     width: 20vmin;
     height: 3vmax;
     border-radius: 20vmin;
-    margin-top: 3%;
+    margin-top: 1%;
     font-size: 3vmin;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #1a0b21;
+    background-color:black;
     outline: none;
     border: none;
     color: #ffff;
@@ -175,8 +187,8 @@ button {
 
 button:hover {
     background-color:transparent;
-    border: 3px solid #1a0b21;
-    color: #1a0b21;
+    border: 3px solid black;
+    color:black;
     cursor: pointer;
     font-weight: bolder;
     outline: none;

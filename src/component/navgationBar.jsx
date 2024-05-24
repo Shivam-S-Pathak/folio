@@ -3,6 +3,11 @@ import { RxCross2 } from "react-icons/rx";
 
 import { CgMenuLeftAlt } from "react-icons/cg";
 import SideBar from './sidePanel';
+import { GrHomeRounded } from "react-icons/gr";
+import { GoProjectSymlink } from "react-icons/go";
+import { GrTechnology } from "react-icons/gr";
+import { RiContactsLine } from "react-icons/ri";
+import { MdConnectWithoutContact } from "react-icons/md";
 
 import React, { useEffect, useState } from 'react';
 const NavigationBar = () => {
@@ -50,33 +55,40 @@ const NavigationBar = () => {
 
             <div className={`${styles.menuIcon} ${isIconVisible ? styles.showMenu : styles.hideMenu}`} onClick={toggle}>
                 {
-                    isSideVisible ? <RxCross2 /> : <CgMenuLeftAlt/>
+                    isSideVisible ? <RxCross2 /> : <CgMenuLeftAlt />
                 }
             </div>
             <div className={`${styles.portfolioname} ${isIconVisible ? styles.showMenu : styles.hideMenu}`}>
                 Shivam's Portfolio
             </div>
             <div className={`${styles.anchorContainer} ${isMenuVisible ? styles.showMenu : styles.hideMenu}`}>
+
                 <a href="#home" className={styles.anchor} onClick={(e) => {
                     e.preventDefault();
                     scrollToComponent("home")
-                }} id="home1">About me</a>
+                }} id="home1"><GrHomeRounded />
+                    Home</a>
+
                 <a href="#projects" className={styles.anchor} onClick={(e) => {
                     e.preventDefault();
                     scrollToComponent("projects")
-                }} id='home2'>Projects</a>
+                }} id='home2'><GoProjectSymlink />
+                    Projects</a>
                 <a href="#techStack" className={styles.anchor} onClick={(e) => {
                     e.preventDefault();
                     scrollToComponent("techStack")
-                }} >Tech Stack</a>
+                }} ><GrTechnology />
+                    Tech Stack</a>
                 <a href="#contactMe" className={styles.anchor} onClick={(e) => {
                     e.preventDefault();
                     scrollToComponent("contactMe")
-                }} >Contact me</a>
+                }} ><RiContactsLine />
+                    Contact me</a>
                 <a href="#connectMe" className={styles.anchor} onClick={(e) => {
                     e.preventDefault();
                     scrollToComponent("connectMe")
-                }} >Connect with me</a>
+                }} ><MdConnectWithoutContact />
+                    Connect with me</a>
             </div>
         </nav>
     </>
