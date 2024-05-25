@@ -6,7 +6,8 @@
 .footer {
     width: 100%;
     height: 30vh;
-    background-color:#0A1128;
+    /* background-color:#0A1128; */
+    background-image: url('/background_img.jpg');
     display: flex;
     justify-content: center;
     align-items: center;

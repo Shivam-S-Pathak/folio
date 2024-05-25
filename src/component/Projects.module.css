@@ -5,6 +5,7 @@
 
 .project {
     background-color: #272838;
+    padding-bottom:4rem;
 }
 
 .contentContainer {
@@ -14,19 +15,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 4vmin;
-    padding: 2% 0 5% 5%;
+    padding: 2rem 0 2rem 0;
 }
 
 .heading {
-    padding-top: 2%;
+    padding: 1rem 1rem 0 1rem;
     text-align: left;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.5vmin;
-    margin-left: 5%;
+    font-size: 0.6rem;
     color: white;
 
 }
 .line{
    border-color:white;
-   margin-right: 5%;
 }

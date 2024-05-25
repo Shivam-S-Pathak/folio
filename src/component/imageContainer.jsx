@@ -7,7 +7,7 @@ const ImgContainer = () => {
 
     useEffect(() => {
         const resizeHandler = () => {
-            if (window.innerWidth <= 1480) {
+            if (window.innerWidth <= 1574) {
                 setIsVisibleVertical(false);
                 setIsVisibleHorizontal(true);
             } else {

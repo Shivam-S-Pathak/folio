@@ -54,7 +54,7 @@ const Projects = () => {
         <div className={Styles.project} id='projects'>
             <div className={Styles.heading}>
                 <h1>Projects</h1>
-                {/* <hr className={Styles.line} /> */}
+                <hr className={Styles.line} />
             </div>
             <main className={Styles.contentContainer}>
                {cards}
