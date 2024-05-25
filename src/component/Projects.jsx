@@ -52,13 +52,15 @@ const Projects = () => {
 
     return <>
         <div className={Styles.project} id='projects'>
-            <div className={Styles.heading}>
-                <h1>Projects</h1>
-                <hr className={Styles.line} />
+            <div className={Styles.projectContainer}>
+                <div className={Styles.heading}>
+                    <h1>Projects</h1>
+                    {/* <hr className={Styles.line} /> */}
+                </div>
+                <main className={Styles.contentContainer}>
+                    {cards}
+                </main>
             </div>
-            <main className={Styles.contentContainer}>
-               {cards}
-            </main>
         </div>
     </>
 }

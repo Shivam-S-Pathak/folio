@@ -88,7 +88,7 @@ const NavigationBar = () => {
                     e.preventDefault();
                     scrollToComponent("connectMe")
                 }} ><MdConnectWithoutContact />
-                    Connect with me</a>
+                    Social media</a>
             </div>
         </nav>
     </>

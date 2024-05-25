@@ -51,7 +51,7 @@ const SideBar = () => {
                     scrollToComponent("connectMe");
                 }}>
                     <MdConnectWithoutContact className={Styles.Icon} />
-                    <label className={Styles.label}>Connect with me</label>
+                    <label className={Styles.label}>Social media</label>
                 </a>
             </div>
         </aside>

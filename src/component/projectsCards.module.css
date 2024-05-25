@@ -3,7 +3,7 @@
     height: 24rem;
     width: 24rem;
     background-color: rgb(252, 255, 251);
-    border-radius: 1vmin;
+    border-radius: 0.5rem;
     overflow: hidden;
 }
 .imgContainer{

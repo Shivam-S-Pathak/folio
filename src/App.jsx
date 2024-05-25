@@ -12,7 +12,7 @@ function App() {
     <>
       <NavigationBar></NavigationBar>
       <ImgContainer></ImgContainer>
-      <Projects></Projects>
+      <Projects ></Projects>
       <Skills></Skills>
       <Contact></Contact>
       <Footer></Footer>
