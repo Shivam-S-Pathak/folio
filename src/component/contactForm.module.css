@@ -1,6 +1,6 @@
 .formContainer {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.881);
+    background-color: #272838;
 }
 
 .header {
@@ -179,18 +179,16 @@ button {
     margin-top: 1%;
     font-size: 3vmin;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:black;
-    outline: none;
-    border: none;
+    background-image:linear-gradient(to left , #001F54 , #034078);
+    border: 1px solid white;
     color: #ffff;
 }
 
 button:hover {
-    background-color:transparent;
-    border: 3px solid black;
-    color:black;
+    background-image:linear-gradient(to right , #001F54 , #034078);
+    border: 1px solid white;
+    color: #ffff;
     cursor: pointer;
-    font-weight: bolder;
     outline: none;
 }
 

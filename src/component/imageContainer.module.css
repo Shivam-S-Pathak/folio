@@ -7,7 +7,7 @@
   width: 100%;
   display:flex ;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.881);
+  background-color: #272838;
 
 }
 .imageBox {
@@ -29,7 +29,7 @@
     flex-direction:row;
     gap: 6vmin;
     flex-wrap: wrap;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px);
     transition: all 0.3s ease;
   }
 

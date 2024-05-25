@@ -5,7 +5,7 @@ const Skills = () => {
         <div className={Styles.skills} id='techStack' >
             <div className={Styles.heading}>
                 <h1>Tech Stack</h1>
-                <hr className={Styles.line} />
+                {/* <hr className={Styles.line} /> */}
             </div>
             <main className={Styles.contentSection}>
                 <section className={Styles.Frontend} >

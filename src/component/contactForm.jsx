@@ -74,7 +74,7 @@ const Contact = () => {
         <div className={Styles.formContainer} id='contactMe'>
             <div className={Styles.header}>
                 <h1>Contact me</h1>
-                <hr className={Styles.line} />
+                {/* <hr className={Styles.line} /> */}
             </div>
             <div className={Styles.contentContainer} >
                 <form onSubmit={submitHandler} className={Styles.formItems}>
