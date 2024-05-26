@@ -1,5 +1,6 @@
 import Styles from './Projects.module.css';
 import Cards from './projectCards';
+import { useEffect, useState } from 'react';
 const Projects = () => {
     const CardsData = [
         {
@@ -49,15 +50,29 @@ const Projects = () => {
             actionLink={card.actionLink}
         />
     ));
+    const [isResponsive ,setIsResponsive] = useState(false);
+
+    useEffect(()=>{
+        const resizeHandle = ()=>{
+        if (window.innerWidth <= 1498){
+            setIsResponsive(true);
+        }else{
+            setIsResponsive(false);
+        }
+    };
+     window.addEventListener('resize' , resizeHandle);
+     resizeHandle();
+     return ()=> window.removeEventListener('resize' , resizeHandle);
+    } ,[]);
 
     return <>
         <div className={Styles.project} id='projects'>
-            <div className={Styles.projectContainer}>
+            <div className={`${Styles.projectContainer} `}>
                 <div className={Styles.heading}>
                     <h1>Projects</h1>
                     {/* <hr className={Styles.line} /> */}
                 </div>
-                <main className={Styles.contentContainer}>
+                <main className={`${Styles.contentContainer} ${isResponsive ? Styles.responsive : Styles.notResponsive}`} >
                     {cards}
                 </main>
             </div>

@@ -1,32 +1,31 @@
 
 .mainContainer{
-    height: 24rem;
-    width: 24rem;
+    width:21rem;
     background-color: rgb(252, 255, 251);
     border-radius: 0.5rem;
     overflow: hidden;
+    justify-content: center;
+    flex-direction: column;
 }
 .imgContainer{
     height: 17rem;
-    width: 100%;
+    width:100%;
 }
 .title{
-    height: 6rem;
     display: flex;
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    gap:9%;
+    gap:0.8rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding: 3%;
 }
 .label{
     font-size: 1.3rem;
     font-weight: bolder;
 }
 .discription{
-    font-size: 15px;
+    font-size: 1rem;
 }
 .anchorLink{
 text-decoration: none;
