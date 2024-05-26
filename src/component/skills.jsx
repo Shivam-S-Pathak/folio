@@ -1,13 +1,30 @@
 import Styles from './skills.module.css';
+import { useEffect, useState } from 'react';
 
 const Skills = () => {
+    const [isResponsive, setIsResponsive] = useState(false);
+
+    useEffect(() => {
+        const resizeHandle = () => {
+            if (window.innerWidth <= 889) {
+                setIsResponsive(true);
+            } else {
+                setIsResponsive(false);
+            }
+        };
+        window.addEventListener('resize', resizeHandle);
+        resizeHandle();
+        return () => window.removeEventListener('resize', resizeHandle);
+    }, []);
+
+
     return <>
         <div className={Styles.skills} id='techStack' >
             <div className={Styles.mainContainer}>
                 <div className={Styles.heading}>
                     <h1>Tech Stack</h1>
                 </div>
-                <main className={Styles.contentSection}>
+                <main className={`${Styles.contentSection} ${isResponsive ? Styles.responsive : Styles.notResponsive}`}>
                     <section className={Styles.Frontend} >
                         <label className={Styles.Techtitles}>Frontend</label>
                         <article className={Styles.technologyContainer}>
@@ -42,5 +59,4 @@ const Skills = () => {
         </div>
     </>
 }
-
 export default Skills;

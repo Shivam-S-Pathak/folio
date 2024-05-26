@@ -30,11 +30,18 @@
    border-color:white;
 }
 .contentSection{
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
-
+.responsive{
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.notResponsive{
+    display: flex;
+    flex-direction: row;
+}
 .Frontend{
     width:24rem;
     border-radius: 0.8rem;
