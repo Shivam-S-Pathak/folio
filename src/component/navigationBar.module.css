@@ -1,19 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.nagivate{
-    background-color:#0a0b39;
-    width:100%;
-    height: 6vmin;
-    position:sticky;
+
+.nagivate {
+    background-color: #0a0b39;
+    width: 100%;
+    position: sticky;
     top: 0;
     z-index: 1;
     display: flex;
     flex-direction: row;
 }
 
-.anchorContainer{
+.anchorContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,51 +23,75 @@
     width: 100%;
     transition: all 0.3s ease-in-out;
 }
-.anchor{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:1.2rem;
+
+.anchor {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
     color: #ffffff;
     transition: all 0.1s ease-in-out;
     text-decoration: none;
 }
 
-.anchor:hover{
+.anchor:hover {
     transform: translateY(-5px);
     outline: none;
 }
-.menuIcon{
+
+.menuIcon {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 160%;
-    width: 10%;
-    position: absolute;
-    
-   
+    font-size: 2rem;
+    height: 6vmin;
+    width: 6vmin;
+
+
 }
-.menuIcon:active{
+
+.menuIcon:active {
     transform: rotate(180deg);
     transition: all 0.3s ease-in-out;
-    
+
 }
 
-.portfolioname{
+.portfolioname {
     display: flex;
     width: 100%;
-    font-size: 100%;
+    height: 6vmin;
+    font-size: 1.2rem;
     justify-content: center;
     align-items: center;
     color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.hideMenu{
+.hideMenu {
     display: none;
-   
+
 }
 
-.showmenu{
+.showmenu {
     display: flex;
-   
+
+}
+
+.toddleButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 6vmin;
+    width: 6vmin;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.darkToddleButton {
+   color: white;
+
+}
+.lightToddleButton{
+    color: white;
 }

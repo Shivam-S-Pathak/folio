@@ -3,12 +3,20 @@
     padding: 0;
 }
 
-.skills {
+.skillsDark {
     display: flex;
     justify-content: center;
     align-items:left;
     flex-direction: column;
     background-color: #272838;
+    padding-bottom:4rem;
+}
+.skillsLight {
+    display: flex;
+    justify-content: center;
+    align-items:left;
+    flex-direction: column;
+    background-color: #ffffff;
     padding-bottom:4rem;
 }
 .mainContainer{
@@ -17,11 +25,20 @@
     gap:1rem;
     padding: 0 4% 0 4%;
 }
-.heading {
+.headingDark {
     text-align: left;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 0.8rem;
     color: white;
+    padding: 1rem;
+
+
+}
+.headingLight {
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: black;
     padding: 1rem;
 
 

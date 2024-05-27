@@ -1,13 +1,13 @@
 import Styles from './imageContainer.module.css'
 import React, { useState, useEffect } from 'react';
 
-const ImgContainer = () => {
+const ImgContainer = ({isDarkMode}) => {
     const [isVisibleHorizontal, setIsVisibleHorizontal] = useState(false);
     const [isVisibleVertical, setIsVisibleVertical] = useState(true);
 
     useEffect(() => {
         const resizeHandler = () => {
-            if (window.innerWidth <= 1623) {
+            if (window.innerWidth <= 1310) {
                 setIsVisibleVertical(false);
                 setIsVisibleHorizontal(true);
             } else {
@@ -21,7 +21,7 @@ const ImgContainer = () => {
         return () => window.removeEventListener('resize', resizeHandler);
     }, []);
     return <>
-        <header className={Styles.headerContainer}>
+        <header className={`${isDarkMode ? Styles.headerContainerDark : Styles.headerContainerLight}`}>
             <div className={Styles.imageBox} id='home'>
 
                 <div className={Styles.blurred}>

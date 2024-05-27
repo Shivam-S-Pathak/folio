@@ -1,7 +1,7 @@
 import Styles from './Projects.module.css';
 import Cards from './projectCards';
 import { useEffect, useState } from 'react';
-const Projects = () => {
+const Projects = ({ isDarkMode }) => {
     const CardsData = [
         {
             title: 'The ScoreBoard',
@@ -43,6 +43,7 @@ const Projects = () => {
     ];
     const cards = CardsData.map((card) => (
         <Cards
+            isDarkMode={isDarkMode}
             key={card.title}
             title={card.title}
             image={card.image}
@@ -50,25 +51,25 @@ const Projects = () => {
             actionLink={card.actionLink}
         />
     ));
-    const [isResponsive ,setIsResponsive] = useState(false);
+    const [isResponsive, setIsResponsive] = useState(false);
 
-    useEffect(()=>{
-        const resizeHandle = ()=>{
-        if (window.innerWidth <= 1498){
-            setIsResponsive(true);
-        }else{
-            setIsResponsive(false);
-        }
-    };
-     window.addEventListener('resize' , resizeHandle);
-     resizeHandle();
-     return ()=> window.removeEventListener('resize' , resizeHandle);
-    } ,[]);
+    useEffect(() => {
+        const resizeHandle = () => {
+            if (window.innerWidth <= 1498) {
+                setIsResponsive(true);
+            } else {
+                setIsResponsive(false);
+            }
+        };
+        window.addEventListener('resize', resizeHandle);
+        resizeHandle();
+        return () => window.removeEventListener('resize', resizeHandle);
+    }, []);
 
     return <>
-        <div className={Styles.project} id='projects'>
+        <div className={`${isDarkMode ? Styles.projectDark : Styles.projectLight}`} id='projects'>
             <div className={`${Styles.projectContainer} `}>
-                <div className={Styles.heading}>
+                <div className={`${isDarkMode ? Styles.headingDark : Styles.headingLight}`}>
                     <h1>Projects</h1>
                     {/* <hr className={Styles.line} /> */}
                 </div>

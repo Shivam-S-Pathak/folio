@@ -8,9 +8,12 @@ import { GoProjectSymlink } from "react-icons/go";
 import { GrTechnology } from "react-icons/gr";
 import { RiContactsLine } from "react-icons/ri";
 import { MdConnectWithoutContact } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
+import { MdLightMode } from "react-icons/md";
+
 
 import React, { useEffect, useState } from 'react';
-const NavigationBar = () => {
+const NavigationBar = ({ isDarkMode, onToggleDarkMode }) => {
 
     const scrollToComponent = (id) => {
         const element = document.getElementById(id);
@@ -45,7 +48,6 @@ const NavigationBar = () => {
         setIsSideVisible(!isSideVisible); // it sets the opposite value of whatever isSideVisible is holding
 
     };
-
     return <>
         <nav className={styles.nagivate}>
 
@@ -90,6 +92,9 @@ const NavigationBar = () => {
                 }} ><MdConnectWithoutContact />
                     Social media</a>
             </div>
+            <button onClick={onToggleDarkMode} className={styles.toddleButton}>
+                {isDarkMode ? <MdLightMode className={styles.lightToddleButton} /> : <MdDarkMode className={styles.darkToddleButton} />}
+            </button>
         </nav>
     </>
 }

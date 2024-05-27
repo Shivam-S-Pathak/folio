@@ -1,9 +1,13 @@
-.formContainer {
+.formContainerDark {
     width: 100%;
     background-color: #272838;
 }
+.formContainerLight {
+    width: 100%;
+    background-color: #ffffff;
+}
 
-.header {
+.headerDark {
     width:92vmin;
     padding:1rem;
     text-align: left;
@@ -12,8 +16,14 @@
     color: white;
 
 }
-.line{
-   border-color:white;
+.headerLight {
+    width:92vmin;
+    padding:1rem;
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: rgb(5, 5, 5);
+
 }
 
 .formItems {
@@ -33,12 +43,22 @@
     flex-direction: column;
 }
 
-.fieldset{
+.fieldsetDark{
     margin: 1%;
     width:90vmin;
     color:white;
     border-radius:2vmin;
     background-color: #bfc3ba1d;
+    border-color: #888c84a9;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.fieldsetLight{
+    margin: 1%;
+    width:90vmin;
+    color:white;
+    border-radius:2vmin;
+    background-color: #121c4fdc;
     border-color: #888c84a9;
     border: none;
     transition: all 0.3s ease-in-out;
@@ -63,8 +83,7 @@
     }
 }
 
-input[type='text'],input[type='email'],
-input[type='number']{
+.emailDark , .numberDark , .firstNameDark , .lastNameDark{
     width: 90%;
     height: 2vmax;
     font-size: 1.2rem;
@@ -72,6 +91,19 @@ input[type='number']{
     background-color:transparent;
     border: none;
     color: white;
+    outline: none;
+    margin: 1rem;
+    padding:1%;
+
+}
+.firstNameLight , .lastNameLight , .emailLight , .numberLight{
+    width: 90%;
+    height: 2vmax;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:transparent;
+    border: none;
+    color: #121c4fdc;
     outline: none;
     margin: 1rem;
     padding:1%;
@@ -117,12 +149,12 @@ input[type='email']::placeholder {
     color: white;
     font-size: 1rem;
 }
-textarea {
+.reasonDark {
     width: 90%;
     height: 16vmin;
     grid-row: 2;
     resize:none;
-    font-size: 3vmin;
+    font-size: 1.2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color:transparent;
     border: none;
@@ -131,34 +163,53 @@ textarea {
     margin: 1rem;
     padding:1%;
 }
+.reasonLight {
+    width: 90%;
+    height: 16vmin;
+    grid-row: 2;
+    resize:none;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:transparent;
+    border: none;
+    color: #121c4fdc;
+    outline: none;
+    margin: 1rem;
+    padding:1%;
+}
 
-  textarea::-webkit-scrollbar { 
+  .reasonDark::-webkit-scrollbar { 
     width: 8px; 
     background-color:transparent; 
   }
   
-  textarea::-webkit-scrollbar-thumb { 
+  .reasonDark::-webkit-scrollbar-thumb { 
     background-color: #bfc3baa9;
     border-radius: 20px;
   }
   
 
-  textarea::-webkit-scrollbar-thumb:hover {
+  .reasonDark::-webkit-scrollbar-thumb:hover {
     background-color: #92bcea;
     cursor:pointer;
   }
-.textAreaFieldset{
-    margin: 1%;
-    width:90vmin;
-    grid-row:1;
-    border-radius: 2vmin;
-    background-color: #bfc3ba1d;
-    border-color: #bfc3baa9;
-    border: none;
-    transition: all 0.3s ease-in-out;
-}
+  .reasonLight::-webkit-scrollbar { 
+    width: 8px; 
+    background-color:transparent; 
+  }
+  
+  .reasonLight::-webkit-scrollbar-thumb { 
+    background-color: #121c4fdc;
+    border-radius: 20px;
+  }
+  
 
-button {
+  .reasonLight::-webkit-scrollbar-thumb:hover {
+    background-color: #208afa;
+    cursor:pointer;
+  }
+
+button[type=submit] {
     width: 20vmin;
     height: 3vmax;
     border-radius: 20vmin;
@@ -170,7 +221,7 @@ button {
     color: #ffff;
 }
 
-button:hover {
+button[type=submit]:hover {
     background-image:linear-gradient(to right , #001F54 , #034078);
     border: 1px solid white;
     color: #ffff;
@@ -178,9 +229,15 @@ button:hover {
     outline: none;
 }
 
-.focused{
+.focusedDark{
     display: block;
     color:#bfc3baa9;
     background-color: transparent;
-    border: 2px solid #bfc3baa9;
+    border: 1px solid #bfc3baa9;
+}
+.focusedLight{
+    display: block;
+    color:#121c4fdc;
+    background-color: transparent;
+    border: 1px solid #121c4fdc;
 }

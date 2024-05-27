@@ -3,8 +3,13 @@
     padding: 0;
 }
 
-.project {
+.projectDark {
     background-color: #272838;
+    padding-bottom:4rem;
+    padding: 0 4% 0 4%;
+}
+.projectLight {
+    background-color: #ffffff;
     padding-bottom:4rem;
     padding: 0 4% 0 4%;
 }
@@ -16,12 +21,20 @@
     padding: 2rem 0 4rem 0;
 }
 
-.heading {
+.headingDark {
     padding: 1rem;
     text-align: left;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 0.8rem;
     color: white;
+
+}
+.headingLight {
+    padding: 1rem;
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
 
 }
 .line{

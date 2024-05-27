@@ -1,38 +1,80 @@
-
-.mainContainer{
-    width:21rem;
-    background-color: rgb(252, 255, 251);
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainContainerLight {
+    display: flex;
+    width: 21rem;
+    background-color:#272838;
     border-radius: 0.5rem;
     overflow: hidden;
     justify-content: center;
     flex-direction: column;
 }
-.imgContainer{
-    height: 17rem;
-    width:100%;
+.mainContainerDark {
+    display: flex;
+    width: 21rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    justify-content: center;
+    flex-direction: column;
 }
-.title{
+
+.imgContainer {
+    height: 17rem;
+    width: 100%;
+}
+
+.title {
+    height: 6rem;
     display: flex;
     justify-content: center;
-    align-items: left;
     flex-direction: column;
-    gap:0.8rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 3%;
+    gap: 0.8rem;
+    padding: 3% 3% 4% 3%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
 }
-.label{
+
+.labelLight {
     font-size: 1.3rem;
     font-weight: bolder;
+    color: white;
+   
 }
-.discription{
+.labelDark {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.discriptionDark {
     font-size: 1rem;
+    color: black;
+    font-weight:350;
 }
-.anchorLink{
-text-decoration: none;
-color: black;
-transition: all 0.3s ease-in-out;
+.discriptionLight {
+    font-size: 1rem;
+    color:white;
+    font-weight:350;
+   
 }
-.anchorLink:hover{
+
+.anchorLinkDark {
     text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.anchorLinkLight {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.anchorLinkDark:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+}
+.anchorLinkLight:hover {
     transform: scale(1.05);
 }

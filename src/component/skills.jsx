@@ -1,7 +1,7 @@
 import Styles from './skills.module.css';
 import { useEffect, useState } from 'react';
 
-const Skills = () => {
+const Skills = ({isDarkMode}) => {
     const [isResponsive, setIsResponsive] = useState(false);
 
     useEffect(() => {
@@ -19,9 +19,9 @@ const Skills = () => {
 
 
     return <>
-        <div className={Styles.skills} id='techStack' >
+        <div className={isDarkMode ? Styles.skillsDark :Styles.skillsLight} id='techStack' >
             <div className={Styles.mainContainer}>
-                <div className={Styles.heading}>
+                <div className={isDarkMode ? Styles.headingDark : Styles.headingLight}>
                     <h1>Tech Stack</h1>
                 </div>
                 <main className={`${Styles.contentSection} ${isResponsive ? Styles.responsive : Styles.notResponsive}`}>
