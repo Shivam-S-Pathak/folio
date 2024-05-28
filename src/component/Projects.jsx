@@ -1,7 +1,7 @@
 import Styles from './Projects.module.css';
 import Cards from './projectCards';
 import { useEffect, useState } from 'react';
-const Projects = ({ isDarkMode }) => {
+const Projects = ({ isDarkMode , isSideVisible }) => {
     const CardsData = [
         {
             title: 'The ScoreBoard',
@@ -67,7 +67,7 @@ const Projects = ({ isDarkMode }) => {
     }, []);
 
     return <>
-        <div className={`${isDarkMode ? Styles.projectDark : Styles.projectLight}`} id='projects'>
+        <div className={`${isDarkMode ? Styles.projectDark : Styles.projectLight} ${isSideVisible ? Styles.projectBlur : ""}`} id='projects'>
             <div className={`${Styles.projectContainer} `}>
                 <div className={`${isDarkMode ? Styles.headingDark : Styles.headingLight}`}>
                     <h1>Projects</h1>

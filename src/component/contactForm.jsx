@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Styles from "./contactForm.module.css";
 import emailjs from "@emailjs/browser";
 
-const Contact = ({ isDarkMode }) => {
+const Contact = ({ isDarkMode, isSideVisible }) => {
   const form = useRef();
 
   const [formData, setFormData] = useState({
@@ -28,9 +28,26 @@ const Contact = ({ isDarkMode }) => {
       .then(
         () => {
           alert("Thank you for contacting me😃😃!!You'll get reply ASAP");
+          setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            contactNumber: "",
+            reason: "",
+          });
         },
         (error) => {
-          alert("sorry something went wrong😟😟!! Please try again later", error.text);
+          alert(
+            "sorry something went wrong😟😟!! Please try again later",
+            error.text
+          );
+          setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            contactNumber: "",
+            reason: "",
+          });
         }
       );
   };
@@ -87,7 +104,7 @@ const Contact = ({ isDarkMode }) => {
   return (
     <div
       className={
-        isDarkMode ? Styles.formContainerDark : Styles.formContainerLight
+        `${isDarkMode ? Styles.formContainerDark : Styles.formContainerLight} ${isSideVisible ? Styles.formContainerBlur : ""}`
       }
       id="contactMe"
     >

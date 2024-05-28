@@ -1,54 +1,64 @@
 .sideBar {
-    position: absolute;
-    top:0;
-    background-color:#0a0b39;
-    height: 100vh;
-    width: 30vh;
-    transition: all 0.3s ease-in-out;
-    animation: slideleft 0.3s ease-in-out;
-    
+  position:fixed;
+  top: 0;
+  left:0;
+  background-color: #0a0b39;
+  background-image: url("./background_img.jpg");
+  height: 100vh;
+  width: 20vh;
+  transition: all 0.3s ease-in-out;
+  animation: slideleft 0.3s ease-in-out;
+  z-index: 1000;
 }
 
 @keyframes slideleft {
-   from{
+  from {
     left: -100%;
-   }
-   to {
+  }
+  to {
     left: 0;
-   }
+  }
 }
 
-.sideBarContent{
-    display: flex;
-    flex-direction: column;
-    gap: 8%;
-    margin-top: 50%;
-    margin-left: 8%;
-    width: 100%;
-    height:50vh;
+.sideBarContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8%;
+  margin-top: 50%;
+  margin-left: 8%;
+  width: 100%;
+  height: 50vh;
 }
-.label{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    color: white;
+.label {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15px;
+  color: white;
 }
-.Icon{
-    font-size:23px;
-    color: white;
+.Icon {
+  font-size: 18px;
+  color: white;
 }
-.labelNicon{
-    display: flex;
-    align-items: center;
-    gap: 10%;
-    text-decoration: none;
-    transition: all 0.3s ease;
+.labelNicon {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
-.labelNicon:active{
-    transform:scale(0.9);
-   
+.labelNicon:active {
+  transform: scale(0.9);
 }
-.labelNicon:hover{
-    transform: translateY(-5px);
-    outline: none;
-   
+.labelNicon:hover {
+  transform: translateY(-5px);
+  outline: none;
+}
+.hideMenu {
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
+.showmenu {
+  display: flex;
+
 }

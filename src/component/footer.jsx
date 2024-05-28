@@ -8,9 +8,9 @@ import { MdAlternateEmail } from "react-icons/md";
 
 
 
-const Footer = () => {
+const Footer = ({isSideVisible}) => {
     return <>
-        <footer className={Styles.footer} id='connectMe'>
+        <footer className={`${Styles.footer} ${isSideVisible ? Styles.footerBlur : ""}`} id='connectMe'>
             <section className={Styles.contentBox}>
                 <figure className={Styles.iconRoom}>
                     <a href=""><FaYoutube className={Styles.iconYT} /></a>

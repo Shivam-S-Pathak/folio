@@ -6,11 +6,17 @@
 .footer {
     width: 100%;
     height: 30vh;
-    /* background-color:#0A1128; */
     background-image: url('/background_img.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.footerBlur{
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.8;
+    filter: blur(5px);
+    transition: all 0.3s ease-in-out;
 }
 
 .iconYT {

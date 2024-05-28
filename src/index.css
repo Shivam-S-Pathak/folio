@@ -1,0 +1,23 @@
+.body {
+    scroll-behavior: smooth;
+    /* background-color: #272838; */
+  }
+  
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(122, 120, 120);
+    border-radius: 10px;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(201, 197, 209, 0.8);
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
