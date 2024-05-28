@@ -1,17 +1,19 @@
 import React, { useState, useRef, useEffect } from "react";
 import Styles from "./contactForm.module.css";
 import emailjs from "@emailjs/browser";
+import { PulseLoader } from "react-spinners";
 
 const Contact = ({ isDarkMode, isSideVisible }) => {
   const form = useRef();
-
-  const [formData, setFormData] = useState({
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const initialFormState = {
     firstName: "",
     lastName: "",
     email: "",
     contactNumber: "",
     reason: "",
-  });
+  };
+  const [formData, setFormData] = useState({ initialFormState });
 
   const inputRefs = useRef([]);
 
@@ -21,32 +23,39 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     emailjs
       .sendForm("service_qguhlgq", "template_gzq53za", form.current, {
         publicKey: "b3sJrCBk7wDHXZMPT",
       })
       .then(
         () => {
+          setIsSubmitting(false);
           alert("Thank you for contacting me😃😃!!You'll get reply ASAP");
-          setFormData({
-            firstName: "",
-            lastName: "",
-            email: "",
-            contactNumber: "",
-            reason: "",
+          setFormData(initialFormState);
+          inputRefs.current.forEach((input) => {
+            if (input) {
+              input.previousElementSibling.style.display = "none";
+              input.parentElement.classList.remove(
+                isDarkMode ? Styles.focusedDark : Styles.focusedLight
+              );
+            }
           });
         },
         (error) => {
+          setIsSubmitting(false);
           alert(
             "sorry something went wrong😟😟!! Please try again later",
             error.text
           );
-          setFormData({
-            firstName: "",
-            lastName: "",
-            email: "",
-            contactNumber: "",
-            reason: "",
+          setFormData(initialFormState);
+          inputRefs.current.forEach((input) => {
+            if (input) {
+              input.previousElementSibling.style.display = "none";
+              input.parentElement.classList.remove(
+                isDarkMode ? Styles.focusedDark : Styles.focusedLight
+              );
+            }
           });
         }
       );
@@ -103,9 +112,11 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
 
   return (
     <div
-      className={
-        `${isDarkMode ? Styles.formContainerDark : Styles.formContainerLight} ${isSideVisible ? Styles.formContainerBlur : ""}`
-      }
+      className={`${
+        isDarkMode ? Styles.formContainerDark : Styles.formContainerLight
+      } ${isSideVisible ? Styles.formContainerBlur : ""} ${
+        isSubmitting ? Styles.disabled : ""
+      }`}
       id="contactMe"
     >
       <div className={Styles.contentContainer}>
@@ -215,8 +226,9 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
               ref={setRef(4)}
             ></textarea>
           </fieldset>
-
-          <button type="submit">Submit</button>
+          <button type="submit">
+            {isSubmitting ? <PulseLoader color="white" size={13} /> : "Submit"}
+          </button>
         </form>
       </div>
     </div>

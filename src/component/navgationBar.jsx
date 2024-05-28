@@ -50,6 +50,7 @@ const NavigationBar = ({
       >
         {isSideVisible ? <RxCross2 /> : <HiOutlineMenu />}
       </div>
+
       <nav
         className={`${styles.nagivate} ${
           isSideVisible ? styles.nagivateBlur : ""

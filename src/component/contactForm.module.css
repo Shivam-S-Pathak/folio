@@ -217,8 +217,7 @@ input[type='email']::placeholder {
   }
 
 button[type=submit] {
-    width: 20vmin;
-    height: 3vmax;
+    padding: 1% 4% 1% 4%;
     border-radius: 20vmin;
     margin-top: 1.3rem;
     font-size: 3vmin;
@@ -247,4 +246,9 @@ button[type=submit]:hover {
     color:#121c4fdc;
     background-color: transparent;
     border: 1px solid #121c4fdc;
+}
+.disabled{
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.6;
 }
