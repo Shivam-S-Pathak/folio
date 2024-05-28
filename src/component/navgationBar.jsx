@@ -1,6 +1,6 @@
 import styles from "./navigationBar.module.css";
 import { RxCross2 } from "react-icons/rx";
-import { CiMenuBurger } from "react-icons/ci";
+import { HiOutlineMenu } from "react-icons/hi";
 import { GrHomeRounded } from "react-icons/gr";
 import { GoProjectSymlink } from "react-icons/go";
 import { GrTechnology } from "react-icons/gr";
@@ -48,7 +48,7 @@ const NavigationBar = ({
         }`}
         onClick={toggle}
       >
-        {isSideVisible ? <RxCross2 /> : < CiMenuBurger />}
+        {isSideVisible ? <RxCross2 /> : <HiOutlineMenu />}
       </div>
       <nav
         className={`${styles.nagivate} ${
