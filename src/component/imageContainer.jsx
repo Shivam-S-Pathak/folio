@@ -1,10 +1,11 @@
 import Styles from "./imageContainer.module.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const ImgContainer = ({ isDarkMode, isSideVisible }) => {
   const [isVisibleHorizontal, setIsVisibleHorizontal] = useState(false);
   const [isVisibleVertical, setIsVisibleVertical] = useState(true);
-
+  const [isVisible, setIsVisible] = useState(false);
+  const observerRef = useRef();
   useEffect(() => {
     const resizeHandler = () => {
       if (window.innerWidth <= 1420) {
@@ -20,14 +21,63 @@ const ImgContainer = ({ isDarkMode, isSideVisible }) => {
     resizeHandler();
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          } else {
+            setIsVisible(false);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (observerRef.current) {
+      observer.observe(observerRef.current);
+    }
+
+    return () => {
+      if (observerRef.current) {
+        observer.unobserve(observerRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          } else {
+            setIsVisible(false);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (observerRef.current) {
+      observer.observe(observerRef.current);
+    }
+
+    return () => {
+      if (observerRef.current) {
+        observer.unobserve(observerRef.current);
+      }
+    };
+  }, []);
   return (
     <>
-      <header
+      <header ref={observerRef}
         className={`${
           isDarkMode ? Styles.headerContainerDark : Styles.headerContainerLight
-        } ${isSideVisible ? Styles.headerContainerBlur : ""}`}
+        } ${isSideVisible ? Styles.headerContainerBlur : ""} `}
       >
-        <div className={Styles.imageBox} id="home">
+        <div className={`${Styles.imageBox}  ${isVisible ? Styles.visible : Styles.notVisible }`} id="home">
           <div className={Styles.blurred}>
             <header className={Styles.dp}>
               <img

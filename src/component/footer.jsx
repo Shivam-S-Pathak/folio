@@ -4,14 +4,40 @@ import { SiLinkedin } from "react-icons/si";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa6";
 import { MdAlternateEmail } from "react-icons/md";
-
+import { useState, useRef ,useEffect } from 'react';
 
 
 
 const Footer = ({isSideVisible}) => {
+    const [isVisible, setIsVisible] = useState(false);
+  const observerRef = useRef();
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                setIsVisible(true);
+              } else {
+                setIsVisible(false);
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+    
+        if (observerRef.current) {
+          observer.observe(observerRef.current);
+        }
+    
+        return () => {
+          if (observerRef.current) {
+            observer.unobserve(observerRef.current);
+          }
+        };
+      }, []);
     return <>
-        <footer className={`${Styles.footer} ${isSideVisible ? Styles.footerBlur : ""}`} id='connectMe'>
-            <section className={Styles.contentBox}>
+        <footer ref={observerRef} className={`${Styles.footer} ${isSideVisible ? Styles.footerBlur : ""} `} id='connectMe'>
+            <section className={`${Styles.contentBox} ${isVisible ? Styles.visible : Styles.notVisible}`}>
                 <figure className={Styles.iconRoom}>
                     <a href=""><FaYoutube className={Styles.iconYT} /></a>
                     <h5 className={Styles.figureCap}>YouTube</h5>

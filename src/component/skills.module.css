@@ -1,307 +1,317 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .skillsDark {
-    display: flex;
-    justify-content: center;
-    align-items:left;
-    flex-direction: column;
-    background-color: #272838;
-    padding-bottom:4rem;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-color: #272838;
+  padding-bottom: 4rem;
 }
 .skillsLight {
-    display: flex;
-    justify-content: center;
-    align-items:left;
-    flex-direction: column;
-    background-color: #ffffff;
-    padding-bottom:4rem;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding-bottom: 4rem;
 }
-.skillsBlur{
-    user-select: none;
-    pointer-events: none;
-    opacity: 0.8;
-    filter: blur(5px);
-    transition: all 0.3s ease-in-out;
+.skillsBlur {
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.8;
+  filter: blur(5px);
+  transition: all 0.3s ease-in-out;
 }
-.mainContainer{
-    display: flex;
-    flex-direction: column;
-    gap:1rem;
-    padding: 0 4% 0 4%;
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 4% 0 4%;
 }
 .headingDark {
-    text-align: left;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 0.8rem;
-    color: white;
-    padding: 1rem;
-
-
+  text-align: left;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  padding: 1rem;
 }
 .headingLight {
-    text-align: left;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 0.8rem;
-    color: black;
-    padding: 1rem;
-
-
+  text-align: left;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  padding: 1rem;
 }
-.line{
-   border-color:white;
+.line {
+  border-color: white;
 }
-.contentSection{
-    flex-wrap: wrap;
-}
-.responsive{
+.contentSection {
     display: flex;
-    flex-direction: row;
-justify-content: center;
-align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.notResponsive{
-    display: flex;
-    flex-direction: row;
+.responsive {
+  justify-content: center;
+  align-items: center;
 }
-.Frontend{
-    width:24rem;
-    border-radius: 0.8rem;
-    display: flex;
-    flex-direction:column;
-    align-items:flex-start;
-    transition: all 0.3s ease-in-out;
-    margin: 2% 2% 2% 0;
-    background-image: linear-gradient(to right, rgb(9, 9, 98) , rgb(87, 13, 87));
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
+.notResponsive {
+ 
+  justify-content: left;
+  align-items: left;
 }
-.Backend{
-    width:24rem;
-    border-radius: 0.8rem;
-    background-image: linear-gradient(to right, rgb(9, 9, 98) , rgb(87, 13, 87));
-    display: flex;
-    flex-direction:column;
-    align-items:flex-start;
-    margin: 2%;
-    padding-bottom: 1%;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
+.Frontend {
+  width: 24rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.3s ease-in-out;
+  margin: 2%;
+  background-image: linear-gradient(to right, rgb(9, 9, 98), rgb(87, 13, 87));
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
-.Database{
-    width:24rem;
-    background-image: linear-gradient(to right, rgb(9, 9, 98) , rgb(87, 13, 87));
-    border-radius: 0.8rem;
-    display: flex;
-    flex-direction:column;
-    align-items:flex-start;
-    margin: 2%;
-    padding-bottom: 1%;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
+.Backend {
+  width: 24rem;
+  border-radius: 0.8rem;
+  background-image: linear-gradient(to right, rgb(9, 9, 98), rgb(87, 13, 87));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2%;
+  padding-bottom: 1%;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
-.Techtitles{
-    color:rgb(164, 159, 159);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 130%;
-    background-color: black;
-    padding: 1.5vmin 1.5vmin 1.5vmin 4vmin;
-    width: 100%;
-    border-radius: 0.8rem 0.8rem 0 0;
+.Database {
+  width: 24rem;
+  background-image: linear-gradient(to right, rgb(9, 9, 98), rgb(87, 13, 87));
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2%;
+  padding-bottom: 1%;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
-.technologyContainer{
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 3vmin;
-    padding:5%;
+.Techtitles {
+  color: rgb(164, 159, 159);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 130%;
+  background-color: black;
+  padding: 1.5vmin 1.5vmin 1.5vmin 4vmin;
+  width: 100%;
+  border-radius: 0.8rem 0.8rem 0 0;
 }
-.techHTML{
-font-size:80%;
-padding: 2%;
-border-radius:  0.6vmin;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-border: 1px solid #e34c26;
-color: #e34c26;
-transition: all 0.3s ease-in-out;
+.technologyContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3vmin;
+  padding: 5%;
 }
-.techHTML:hover{
-    background-color: #e34c26;
-    color:#ebebeb;
-    transform: rotate(0);
+.techHTML {
+  font-size: 80%;
+  padding: 2%;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #e34c26;
+  color: #e34c26;
+  transition: all 0.3s ease-in-out;
 }
-
-.techCSS{
-    font-size:80%;
-padding: 2%;
-border-radius:  0.6vmin;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-border: 1px solid #5a7bfe;
-color: #5a7bfe;
-transition: all 0.3s ease-in-out;
-}
-.techCSS:hover{
-    background-color: #5a7bfe;
-    color:#ebebeb;
-    transform: rotate(0);
-}
-.techJS{
-    font-size:80%;
-padding: 2%;
-border-radius:  0.6vmin;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-border:1px solid #f0db4f;
-color: #f0db4f;
-transition: all 0.3s ease-in-out;
-}
-.techJS:hover{
-    background-color: #f0db4f;
-    color:#323330;
-    transform: rotate(0);
-}
-.techTailwind{
-    font-size:80%;
-padding: 2%;
-border-radius:  0.6vmin;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-border: 1px solid #18adde;
-color: #18adde;
-transition: all 0.3s ease-in-out;
-}
-.techTailwind:hover{
-    background-color: #18adde;
-    color:#ebebeb;
-    transform: rotate(0);
-}
-.techBootstrap{
-    font-size:80%;
-padding: 2%;
-border-radius:  0.6vmin;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-border: 1px solid #ac7cf4;
-color: #ac7cf4;
-transition: all 0.3s ease-in-out;
-}
-.techBootstrap:hover{
-    background-color: #ac7cf4;
-    color:#ffff;
-    transform: rotate(0);
-}
-.techReact{
-    font-size:80%;
-padding: 2%;
-border-radius:  0.6vmin;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-border: 1px solid #61dbfb;
-color: #61dbfb;
-transition: all 0.3s ease-in-out;
-}
-.techReact:hover{
-    background-color: #61dbfb;
-    color:#ffff;
-    transform: rotate(0);
+.techHTML:hover {
+  background-color: #e34c26;
+  color: #ebebeb;
+  transform: rotate(0);
 }
 
-.techDjango{
-    font-size:80%;
-padding: 2%;
-border-radius:  0.6vmin;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-border: 1px solid #69f6c0;
-color: #69f6c0;
-transition: all 0.3s ease-in-out;
+.techCSS {
+  font-size: 80%;
+  padding: 2%;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #5a7bfe;
+  color: #5a7bfe;
+  transition: all 0.3s ease-in-out;
 }
-.techDjango:hover{
-    background-color: #69f6c0;
-    color:#262323;
-    transform: rotate(0);
+.techCSS:hover {
+  background-color: #5a7bfe;
+  color: #ebebeb;
+  transform: rotate(0);
 }
-.techNode{
-    font-size:80%;
-padding: 2%;
-border-radius:  0.6vmin;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-border: 1px solid #82c378;
-color: #82c378;
-transition: all 0.3s ease-in-out;
+.techJS {
+  font-size: 80%;
+  padding: 2%;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #f0db4f;
+  color: #f0db4f;
+  transition: all 0.3s ease-in-out;
 }
-.techNode:hover{
-    background-color: #82c378;
-    color:#080e0b;
-    transform: rotate(0);
+.techJS:hover {
+  background-color: #f0db4f;
+  color: #323330;
+  transform: rotate(0);
 }
-.techExpress{
-    font-size:80%;
-padding: 2%;
-border-radius:  0.6vmin;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-border: 1px solid #f0db4f;
-color: #f0db4f;
-transition: all 0.3s ease-in-out;
+.techTailwind {
+  font-size: 80%;
+  padding: 2%;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #18adde;
+  color: #18adde;
+  transition: all 0.3s ease-in-out;
 }
-.techExpress:hover{
-    background-color: #f0db4f;
-    color:#323330;
-    transform: rotate(0);
+.techTailwind:hover {
+  background-color: #18adde;
+  color: #ebebeb;
+  transform: rotate(0);
 }
-.tecMySQLite{
-    font-size:80%;
-padding: 2%;
-border-radius:  0.6vmin;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-border: 1px solid #7393ff;
-color: #7393ff;
-transition: all 0.3s ease-in-out;
+.techBootstrap {
+  font-size: 80%;
+  padding: 2%;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #ac7cf4;
+  color: #ac7cf4;
+  transition: all 0.3s ease-in-out;
 }
-.tecMySQLite:hover{
-    background-color: #7393ff;
-    color:#0a0a0a;
-    transform: rotate(0);
+.techBootstrap:hover {
+  background-color: #ac7cf4;
+  color: #ffff;
+  transform: rotate(0);
 }
-.techMongo{
-    font-size:80%;
-padding: 2%;
-border-radius:  0.6vmin;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-border: 1px solid #00ed64;
-color: #00ed64;
-transition: all 0.3s ease-in-out;
+.techReact {
+  font-size: 80%;
+  padding: 2%;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #61dbfb;
+  color: #61dbfb;
+  transition: all 0.3s ease-in-out;
 }
-.techMongo:hover{
-    background-color: #00ed64;
-    color:#001e2b;
-    transform: rotate(0);
+.techReact:hover {
+  background-color: #61dbfb;
+  color: #ffff;
+  transform: rotate(0);
 }
-.techPostgres{
-    font-size:80%;
-padding: 2%;
-border-radius:  0.6vmin;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-border: 1px solid #9392bd;
-color: #9392bd;
-transition: all 0.3s ease-in-out;
+
+.techDjango {
+  font-size: 80%;
+  padding: 2%;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #69f6c0;
+  color: #69f6c0;
+  transition: all 0.3s ease-in-out;
 }
-.techPostgres:hover{
-    background-color: #9392bd;
-    color:#000000;
-    transform: rotate(0);
+.techDjango:hover {
+  background-color: #69f6c0;
+  color: #262323;
+  transform: rotate(0);
 }
-.techMySQL{
-    font-size:80%;
-padding: 2%;
-border-radius:  0.6vmin;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-border: 1px solid #f29111;
-color: #f29111;
-transition: all 0.3s ease-in-out;
+.techNode {
+  font-size: 80%;
+  padding: 2%;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #82c378;
+  color: #82c378;
+  transition: all 0.3s ease-in-out;
 }
-.techMySQL:hover{
-    background-color: #f29111;
-    color:#00758f;
-    transform: rotate(0);
+.techNode:hover {
+  background-color: #82c378;
+  color: #080e0b;
+  transform: rotate(0);
+}
+.techExpress {
+  font-size: 80%;
+  padding: 2%;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #f0db4f;
+  color: #f0db4f;
+  transition: all 0.3s ease-in-out;
+}
+.techExpress:hover {
+  background-color: #f0db4f;
+  color: #323330;
+  transform: rotate(0);
+}
+.tecMySQLite {
+  font-size: 80%;
+  padding: 2%;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #7393ff;
+  color: #7393ff;
+  transition: all 0.3s ease-in-out;
+}
+.tecMySQLite:hover {
+  background-color: #7393ff;
+  color: #0a0a0a;
+  transform: rotate(0);
+}
+.techMongo {
+  font-size: 80%;
+  padding: 2%;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #00ed64;
+  color: #00ed64;
+  transition: all 0.3s ease-in-out;
+}
+.techMongo:hover {
+  background-color: #00ed64;
+  color: #001e2b;
+  transform: rotate(0);
+}
+.techPostgres {
+  font-size: 80%;
+  padding: 2%;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #9392bd;
+  color: #9392bd;
+  transition: all 0.3s ease-in-out;
+}
+.techPostgres:hover {
+  background-color: #9392bd;
+  color: #000000;
+  transform: rotate(0);
+}
+.techMySQL {
+  font-size: 80%;
+  padding: 2%;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #f29111;
+  color: #f29111;
+  transition: all 0.3s ease-in-out;
+}
+.techMySQL:hover {
+  background-color: #f29111;
+  color: #00758f;
+  transform: rotate(0);
+}
+.visible{
+    transition: all 1s ease-in-out;
+    transform: translateY(0);
+    opacity:1;
+}
+.notVisible{
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    transform: translateY(-50%);
 }

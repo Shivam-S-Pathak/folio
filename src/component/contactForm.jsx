@@ -6,6 +6,9 @@ import { PulseLoader } from "react-spinners";
 const Contact = ({ isDarkMode, isSideVisible }) => {
   const form = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const observerRef = useRef();
+
   const initialFormState = {
     firstName: "",
     lastName: "",
@@ -109,9 +112,34 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
   const setRef = (index) => (el) => {
     inputRefs.current[index] = el;
   };
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          } else {
+            setIsVisible(false);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (observerRef.current) {
+      observer.observe(observerRef.current);
+    }
+
+    return () => {
+      if (observerRef.current) {
+        observer.unobserve(observerRef.current);
+      }
+    };
+  }, []);
 
   return (
     <div
+      ref={observerRef}
       className={`${
         isDarkMode ? Styles.formContainerDark : Styles.formContainerLight
       } ${isSideVisible ? Styles.formContainerBlur : ""} ${
@@ -119,11 +147,19 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
       }`}
       id="contactMe"
     >
-      <div className={Styles.contentContainer}>
+      <div
+        className={`${Styles.contentContainer} ${
+          isVisible ? Styles.visible : Styles.notVisible
+        }`}
+      >
         <div className={isDarkMode ? Styles.headerDark : Styles.headerLight}>
           <h1>Get in touch</h1>
         </div>
-        <form ref={form} onSubmit={submitHandler} className={Styles.formItems}>
+        <form
+          ref={form}
+          onSubmit={submitHandler}
+          className={`${Styles.formItems} `}
+        >
           <fieldset
             className={`${
               isDarkMode ? Styles.fieldsetDark : Styles.fieldsetLight

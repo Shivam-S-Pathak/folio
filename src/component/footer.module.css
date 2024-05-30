@@ -108,3 +108,14 @@
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.visible{
+    transition: all 1s ease-in-out;
+    transform: translateY(0);
+    opacity:1;
+}
+.notVisible{
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    transform: translateY(-50%);
+}

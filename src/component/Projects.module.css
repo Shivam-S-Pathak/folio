@@ -64,3 +64,14 @@
     justify-content:left;
     align-items: center;
 }
+
+.visible{
+    transition: all 1s ease-in-out;
+    transform: translateX(0);
+    opacity:1;
+}
+.notVisible{
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    transform: translateX(-50%);
+}
