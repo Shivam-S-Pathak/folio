@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  background-color: #272838;
+  background-color: #121319;
   padding-bottom: 4rem;
 }
 .skillsLight {
@@ -106,7 +106,7 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 130%;
-  background-color: black;
+  background-color:black;
   padding: 1.5vmin 1.5vmin 1.5vmin 4vmin;
   width: 100%;
   border-radius: 0.8rem 0.8rem 0 0;
@@ -128,7 +128,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #e34c26;
   color: #e34c26;
-  transition: all 0.3s ease-in-out;
+ 
 }
 .techHTML:hover {
   background-color: #e34c26;
@@ -143,7 +143,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #5a7bfe;
   color: #5a7bfe;
-  transition: all 0.3s ease-in-out;
+
 }
 .techCSS:hover {
   background-color: #5a7bfe;
@@ -157,7 +157,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #f0db4f;
   color: #f0db4f;
-  transition: all 0.3s ease-in-out;
+
 }
 .techJS:hover {
   background-color: #f0db4f;
@@ -171,7 +171,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #18adde;
   color: #18adde;
-  transition: all 0.3s ease-in-out;
+  
 }
 .techTailwind:hover {
   background-color: #18adde;
@@ -185,7 +185,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #ac7cf4;
   color: #ac7cf4;
-  transition: all 0.3s ease-in-out;
+  
 }
 .techBootstrap:hover {
   background-color: #ac7cf4;
@@ -199,7 +199,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #61dbfb;
   color: #61dbfb;
-  transition: all 0.3s ease-in-out;
+  
 }
 .techReact:hover {
   background-color: #61dbfb;
@@ -214,7 +214,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #69f6c0;
   color: #69f6c0;
-  transition: all 0.3s ease-in-out;
 }
 .techDjango:hover {
   background-color: #69f6c0;
@@ -228,7 +227,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #82c378;
   color: #82c378;
-  transition: all 0.3s ease-in-out;
+ 
 }
 .techNode:hover {
   background-color: #82c378;
@@ -242,7 +241,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #f0db4f;
   color: #f0db4f;
-  transition: all 0.3s ease-in-out;
 }
 .techExpress:hover {
   background-color: #f0db4f;
@@ -256,7 +254,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #7393ff;
   color: #7393ff;
-  transition: all 0.3s ease-in-out;
+  
 }
 .tecMySQLite:hover {
   background-color: #7393ff;
@@ -270,7 +268,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #00ed64;
   color: #00ed64;
-  transition: all 0.3s ease-in-out;
+ 
 }
 .techMongo:hover {
   background-color: #00ed64;
@@ -284,7 +282,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #9392bd;
   color: #9392bd;
-  transition: all 0.3s ease-in-out;
+ 
 }
 .techPostgres:hover {
   background-color: #9392bd;
@@ -298,7 +296,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #f29111;
   color: #f29111;
-  transition: all 0.3s ease-in-out;
+  
 }
 .techMySQL:hover {
   background-color: #f29111;
@@ -306,12 +304,12 @@
   transform: rotate(0);
 }
 .visible{
-    transition: all 1s ease-in-out;
-    transform: translateY(0);
+  transition: transform 1s ease-out;
+    /* transform: translateY(0); */
     opacity:1;
 }
 .notVisible{
-    transition: all 1s ease-in-out;
+  transition: transform 1s ease-out;
     opacity: 0;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
 }

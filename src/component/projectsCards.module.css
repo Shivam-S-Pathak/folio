@@ -6,6 +6,7 @@
     display: flex;
     width: 21rem;
     background-color:#272838;
+    background-color: #121319;
     border-radius: 0.5rem;
     overflow: hidden;
     justify-content: center;
@@ -57,24 +58,36 @@
 .discriptionLight {
     font-size: 1rem;
     color:white;
-    font-weight:350;
+    font-weight:350; transition: transform 0.3s;
    
 }
 
 .anchorLinkDark {
+
     text-decoration: none;
     color: black;
-    transition: all 0.3s ease-in-out;
 }
 .anchorLinkLight {
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
 }
 
 .anchorLinkDark:hover {
+   transition: all 0.3s ease-in-out;
     text-decoration: none;
     transform: scale(1.05);
 }
 .anchorLinkLight:hover {
+    transition: transform 0.3s;
+    text-decoration: none;
     transform: scale(1.05);
+}
+.visible{
+    transition: all 1s ease-in-out;
+    transform: translateX(0);
+    opacity:1;
+}
+.notVisible{
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    transform: translateX(-50%);
 }

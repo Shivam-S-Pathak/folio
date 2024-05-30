@@ -57,10 +57,11 @@
     width: 6vmin;
     z-index:2001;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    
 }
 .menuIcon:active {
-    transform: matrix(0.8, 0.3, -0.3, 0.8, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(180deg);
 }
 
 .portfolioname {

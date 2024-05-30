@@ -51,12 +51,12 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
       }`}
       id="techStack"
     >
-      <div
-        className={`${Styles.mainContainer}  ${
-          isVisible ? Styles.visible : Styles.notVisible
-        }`}
-      >
-        <div className={isDarkMode ? Styles.headingDark : Styles.headingLight}>
+      <div className={`${Styles.mainContainer}`}>
+        <div
+          className={`${
+            isDarkMode ? Styles.headingDark : Styles.headingLight
+          } ${isVisible ? Styles.visible : Styles.notVisible}`}
+        >
           <h1>Tech Stack</h1>
         </div>
         <div
@@ -65,7 +65,11 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
             isResponsive ? Styles.responsive : Styles.notResponsive
           }`}
         >
-          <section className={`${Styles.Frontend} `}>
+          <section
+            className={`${Styles.Frontend} ${
+              isVisible ? Styles.visible : Styles.notVisible
+            } `}
+          >
             <label className={Styles.Techtitles}>Frontend</label>
             <article className={Styles.technologyContainer}>
               <label className={Styles.techHTML}>HTML</label>
@@ -76,7 +80,11 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
               <label className={Styles.techReact}>React.js</label>
             </article>
           </section>
-          <section className={`${Styles.Backend} `}>
+          <section
+            className={`${Styles.Backend} ${
+              isVisible ? Styles.visible : Styles.notVisible
+            } `}
+          >
             <label className={Styles.Techtitles}>Backend</label>
             <article className={Styles.technologyContainer}>
               <label className={Styles.techDjango}>Django</label>
@@ -84,7 +92,11 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
               <label className={Styles.techExpress}>Express.js</label>
             </article>
           </section>
-          <section className={`${Styles.Database}`}>
+          <section
+            className={`${Styles.Database} ${
+              isVisible ? Styles.visible : Styles.notVisible
+            }`}
+          >
             <label className={Styles.Techtitles}>Database</label>
             <article className={Styles.technologyContainer}>
               <label className={Styles.tecMySQLite}>MySQLite</label>

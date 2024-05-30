@@ -102,21 +102,22 @@ const Projects = ({ isDarkMode, isSideVisible }) => {
   return (
     <>
       <div
+       ref={observerRef}
         className= {`${isDarkMode ? Styles.projectDark : Styles.projectLight} ${
           isSideVisible ? Styles.projectBlur : ""
-        }`}
+        }  `}
         id="projects"
       >
-        <div className={`${Styles.projectContainer}  ${isVisible ? Styles.visible : Styles.notVisible }`}>
+        <div className={`${Styles.projectContainer}`}>
           <div
             className={`${
               isDarkMode ? Styles.headingDark : Styles.headingLight
-            }`}
+            }  ${isVisible ? Styles.visible : Styles.notVisible }`}
           >
             <h1>Projects</h1>
             {/* <hr className={Styles.line} /> */}
           </div>
-          <main ref={observerRef}
+          <main
             className={ `${Styles.contentContainer} ${
               isResponsive ? Styles.responsive : Styles.notResponsive
             } `}

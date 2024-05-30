@@ -152,7 +152,9 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
           isVisible ? Styles.visible : Styles.notVisible
         }`}
       >
-        <div className={isDarkMode ? Styles.headerDark : Styles.headerLight}>
+        <div className={`${isDarkMode ? Styles.headerDark : Styles.headerLight} ${
+          isVisible ? Styles.visible : Styles.notVisible
+        }`}>
           <h1>Get in touch</h1>
         </div>
         <form

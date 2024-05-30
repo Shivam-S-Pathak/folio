@@ -33,7 +33,7 @@ function App() {
     setIsDarkMode(!isDarkMode);
   };
   useEffect(() => {
-    document.body.style.backgroundColor = isDarkMode ? "#272838" : "#FFF";
+    document.body.style.backgroundColor = isDarkMode ? "#121319" : "#FFF";
   }, [isDarkMode]);
 
   const toggle = () => {

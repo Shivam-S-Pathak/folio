@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   background-color: #272838;
+  background-color: #121319;
   padding-bottom: 2rem;
 }
 .headerContainerBlur {
@@ -55,9 +56,11 @@
   width: 15vmax;
 }
 .Name {
+  display: flex;
+  flex-wrap: nowrap;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.5vmax;
+  font-size: 2.7vmax;
 }
 .vertical_line {
   width: 1px;
@@ -95,7 +98,6 @@
 }
 .visible{
   transition: all 1s ease-in-out;
-  /* transform: translateY(0); */
   opacity:1;
 }
 .notVisible{
