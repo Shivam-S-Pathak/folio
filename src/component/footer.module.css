@@ -23,7 +23,7 @@
 
 .iconYT {
     color: white;
-    font-size: 50px;
+    font-size: 7vmin;
     transition: all 0.3s ease-in-out;
 }
 
@@ -36,7 +36,7 @@
 
 .iconLI {
     color: white;
-    font-size: 50px;
+    font-size: 7vmin;
     transition: all 0.3s ease-in-out;
 }
 
@@ -48,7 +48,7 @@
 
 .iconX {
     color: white;
-    font-size: 50px;
+    font-size: 7vmin;
     transition: all 0.3s ease-in-out;
 }
 
@@ -60,7 +60,7 @@
 
 .iconGH {
     color: white;
-    font-size: 50px;
+    font-size: 7vmin;
     transition: all 0.3s ease-in-out;
 }
 
@@ -72,7 +72,7 @@
 
 .iconMAIL {
     color: white;
-    font-size: 50px;
+    font-size: 7vmin;
     transition: all 0.3s ease-in-out;
 }
 
@@ -106,7 +106,8 @@
 
 .figureCap {
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5vmin;
 }
 
 .visible{

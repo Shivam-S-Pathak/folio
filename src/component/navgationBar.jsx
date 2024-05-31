@@ -6,13 +6,18 @@ import { GoProjectSymlink } from "react-icons/go";
 import { GrTechnology } from "react-icons/gr";
 import { RiContactsLine } from "react-icons/ri";
 import { MdConnectWithoutContact } from "react-icons/md";
-import { MdDarkMode } from "react-icons/md";
-import { MdLightMode } from "react-icons/md";
+
+// import extra
+import { PiSunFill } from "react-icons/pi";
+import { PiSunLight } from "react-icons/pi";
+import { PiMoonStarsFill } from "react-icons/pi";
+import { PiMoonStarsLight } from "react-icons/pi";
 
 import React, { useEffect, useState } from "react";
 const NavigationBar = ({
   isDarkMode,
   onToggleDarkMode,
+  onToggleLightMode,
   isIconVisible,
   isSideVisible,
   toggle,
@@ -127,16 +132,26 @@ const NavigationBar = ({
             Social media
           </a>
         </div>
-        <button onClick={onToggleDarkMode} className={styles.toddleButton}>
-          {isDarkMode ? (
-            <MdLightMode
-              className={styles.lightToddleButton}
-              title="Light mode"
-            />
-          ) : (
-            <MdDarkMode className={styles.darkToddleButton} title="Dark mode" />
-          )}
-        </button>
+        <div className={styles.buttonContainer}> 
+        {isDarkMode ? (
+          <button className={styles.ButtonDisable} onClick={onToggleLightMode}>
+            <PiSunLight />
+          </button>
+        ) : (
+          <button className={styles.ButtonActive} onClick={onToggleLightMode}>
+            <PiSunFill />
+          </button>
+        )}
+        {isDarkMode ? (
+          <button className={styles.ButtonActive} onClick={onToggleDarkMode}>
+            <PiMoonStarsFill />
+          </button>
+        ) : (
+          <button className={styles.ButtonDisable} onClick={onToggleDarkMode}>
+            <PiMoonStarsLight />
+          </button>
+        )}
+        </div>
       </nav>
     </>
   );

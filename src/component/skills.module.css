@@ -73,14 +73,17 @@
   align-items: flex-start;
   transition: all 0.3s ease-in-out;
   margin: 2%;
-  background-image: linear-gradient(to right, rgb(9, 9, 98), rgb(87, 13, 87));
+  background-color: black;
+  box-shadow:  9px 10px 18px 0px rgb(0, 85, 241);
+
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
 .Backend {
   width: 24rem;
   border-radius: 0.8rem;
-  background-image: linear-gradient(to right, rgb(9, 9, 98), rgb(87, 13, 87));
+  background-color: black;
+  box-shadow:  9px 10px 18px 0px rgb(0, 85, 241);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -91,7 +94,9 @@
 }
 .Database {
   width: 24rem;
-  background-image: linear-gradient(to right, rgb(9, 9, 98), rgb(87, 13, 87));
+  /* background-image: linear-gradient(to right, rgb(9, 9, 98), rgb(87, 13, 87)); */
+  background-color: black;
+  box-shadow:  9px 10px 18px 0px rgb(0, 85, 241);
   border-radius: 0.8rem;
   display: flex;
   flex-direction: column;
@@ -102,11 +107,10 @@
   transition: all 0.3s ease-in-out;
 }
 .Techtitles {
-  color: rgb(164, 159, 159);
+  color: rgb(243, 243, 243);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 130%;
-  background-color:black;
   padding: 1.5vmin 1.5vmin 1.5vmin 4vmin;
   width: 100%;
   border-radius: 0.8rem 0.8rem 0 0;

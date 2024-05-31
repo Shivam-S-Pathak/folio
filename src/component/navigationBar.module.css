@@ -11,6 +11,8 @@
     z-index: 1;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .nagivateBlur{
     user-select: none;
@@ -29,11 +31,12 @@
     gap: 4%;
     width: 100%;
     transition: all 0.3s ease-in-out;
+    margin: 1% 0 1% 0;
 }
 
 .anchor {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #ffffff;
     transition: all 0.1s ease-in-out;
     text-decoration: none;
@@ -61,7 +64,7 @@
 }
 .menuIcon:active {
     transition: transform 0.3s ease-in-out;
-    transform: rotate(180deg);
+    transform: scale(0.9);
 }
 
 .portfolioname {
@@ -84,23 +87,39 @@
     display: flex;
 
 }
-
-.toddleButton {
+.ButtonActive {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    height: 6vmin;
-    width: 6vmin;
-    background-color: transparent;
     border: none;
-    transition: all 0.3s ease-in-out;
+    background-color:white;
+    color: black;
     cursor: pointer;
+    
+    border-radius: 300vmin;
+    padding:0.3rem;
+    font-size: 3vmin;
+    transition: all 0.3s ease-in-out;
 }
-.darkToddleButton {
-   color: white;
-
-}
-.lightToddleButton{
+.ButtonDisable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color:transparent;
     color: white;
+    cursor: pointer;
+    padding:0.3rem;
+    font-size: 3vmin;
+    transition: all 0.3s ease-in-out;
+  
+}
+.buttonContainer{
+display: flex;
+flex-direction: row;
+/* background-color: aquamarine; */
+border: 0.25vmin solid white;
+border-radius: 300vmin;
+gap: 1vmin;
+
 }

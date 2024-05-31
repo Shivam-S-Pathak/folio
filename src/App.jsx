@@ -5,7 +5,7 @@ import Contact from "./component/contactForm";
 import Footer from "./component/footer";
 import Skills from "./component/skills";
 import SideBar from "./component/sidePanel";
-import { useState, useEffect ,useRef } from "react";
+import { useState, useEffect} from "react";
 import "./App.css";
 
 function App() {
@@ -30,7 +30,10 @@ function App() {
   }, []);
 
   const handleToggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
+    setIsDarkMode(true);
+  };
+  const handleToggleLightMode = () => {
+    setIsDarkMode(false);
   };
   useEffect(() => {
     document.body.style.backgroundColor = isDarkMode ? "#121319" : "#FFF";
@@ -48,6 +51,7 @@ function App() {
       <NavigationBar
         isDarkMode={isDarkMode}
         onToggleDarkMode={handleToggleDarkMode}
+        onToggleLightMode={handleToggleLightMode}
         isIconVisible={isIconVisible}
         isSideVisible={isSideVisible}
         toggle={toggle}
