@@ -1,125 +1,122 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .nagivate {
-    background-image: url("/background_img.jpg");
-    width: 100%;
-    position:sticky;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  background-image: url("/background_img.jpg");
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.nagivateBlur{
-    user-select: none;
-    pointer-events: none;
-    opacity: 0.8;
-    filter: blur(5px);
-    transition: all 0.3s ease-in-out;
+.nagivateBlur {
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.8;
+  filter: blur(5px);
+  transition: all 0.3s ease-in-out;
 }
 
 .anchorContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 4%;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-    margin: 1% 0 1% 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2%;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  /* margin: 1% 0 1% 0; */
 }
 
 .anchor {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.4rem;
-    color: #ffffff;
-    transition: all 0.1s ease-in-out;
-    text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  padding: 1%;
 }
 
 .anchor:hover {
-    transform: translateY(-5px);
-    outline: none;
+  outline: none;
+  transform: scale(1.1);
 }
 
 .menuIcon {
-    position:fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 2rem;
-    height: 6vmin;
-    width: 6vmin;
-    z-index:2001;
-    cursor: pointer;
-    
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  height: 6vmin;
+  width: 6vmin;
+  z-index: 2001;
+  cursor: pointer;
 }
 .menuIcon:active {
-    transition: transform 0.3s ease-in-out;
-    transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(180deg);
 }
 
 .portfolioname {
-    display: flex;
-    width: 100%;
-    height: 6vmin;
-    font-size: 1.2rem;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  width: 100%;
+  height: 6vmin;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .hideMenu {
-    display: none;
-
+  display: none;
 }
 
 .showmenu {
-    display: flex;
-
+  display: flex;
 }
 .ButtonActive {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background-color:white;
-    color: black;
-    cursor: pointer;
-    
-    border-radius: 300vmin;
-    padding:0.3rem;
-    font-size: 3vmin;
-    transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 300vmin;
+  padding: 0.3rem;
+  font-size: 3vmin;
+  transition: background-color 0.3s ease-in-out;
 }
-.ButtonDisable{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background-color:transparent;
-    color: white;
-    cursor: pointer;
-    padding:0.3rem;
-    font-size: 3vmin;
-    transition: all 0.3s ease-in-out;
-  
+.ButtonDisable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 0.3rem;
+  font-size: 3vmin;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0.9);
 }
-.buttonContainer{
-display: flex;
-flex-direction: row;
-/* background-color: aquamarine; */
-border: 0.25vmin solid white;
-border-radius: 300vmin;
-gap: 1vmin;
-
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  border: 0.25vmin solid white;
+  border-radius: 300vmin;
+  gap: 1vmin;
 }

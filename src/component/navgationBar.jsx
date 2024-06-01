@@ -82,7 +82,6 @@ const NavigationBar = ({
             }}
             id="home1"
           >
-            <GrHomeRounded />
             Home
           </a>
 
@@ -95,7 +94,6 @@ const NavigationBar = ({
             }}
             id="home2"
           >
-            <GoProjectSymlink />
             Projects
           </a>
           <a
@@ -106,7 +104,6 @@ const NavigationBar = ({
               scrollToComponent("techStack");
             }}
           >
-            <GrTechnology />
             Tech Stack
           </a>
           <a
@@ -117,7 +114,6 @@ const NavigationBar = ({
               scrollToComponent("contactMe");
             }}
           >
-            <RiContactsLine />
             Contact me
           </a>
           <a
@@ -128,29 +124,31 @@ const NavigationBar = ({
               scrollToComponent("connectMe");
             }}
           >
-            <MdConnectWithoutContact />
             Social media
           </a>
         </div>
-        <div className={styles.buttonContainer}> 
-        {isDarkMode ? (
-          <button className={styles.ButtonDisable} onClick={onToggleLightMode}>
-            <PiSunLight />
-          </button>
-        ) : (
-          <button className={styles.ButtonActive} onClick={onToggleLightMode}>
-            <PiSunFill />
-          </button>
-        )}
-        {isDarkMode ? (
-          <button className={styles.ButtonActive} onClick={onToggleDarkMode}>
-            <PiMoonStarsFill />
-          </button>
-        ) : (
-          <button className={styles.ButtonDisable} onClick={onToggleDarkMode}>
-            <PiMoonStarsLight />
-          </button>
-        )}
+        <div className={styles.buttonContainer}>
+          {isDarkMode ? (
+            <button
+              className={styles.ButtonDisable}
+              onClick={onToggleLightMode}
+            >
+              <PiSunLight />
+            </button>
+          ) : (
+            <button className={styles.ButtonActive} onClick={onToggleLightMode}>
+              <PiSunFill />
+            </button>
+          )}
+          {isDarkMode ? (
+            <button className={styles.ButtonActive} onClick={onToggleDarkMode}>
+              <PiMoonStarsFill />
+            </button>
+          ) : (
+            <button className={styles.ButtonDisable} onClick={onToggleDarkMode}>
+              <PiMoonStarsLight />
+            </button>
+          )}
         </div>
       </nav>
     </>
