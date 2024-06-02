@@ -4,7 +4,7 @@
 }
 
 .nagivate {
-  background-image: url("/background_img.jpg");
+  backdrop-filter: blur(20px);
   width: 100%;
   position: sticky;
   top: 0;
@@ -13,6 +13,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.darkMode {
+  color: white;
+}
+.lightMode {
+  color: black;
 }
 .nagivateBlur {
   user-select: none;
@@ -38,7 +44,6 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 1.2rem;
-  color: #ffffff;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   padding: 1%;
@@ -56,7 +61,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   font-size: 2rem;
   height: 6vmin;
   width: 6vmin;
@@ -75,7 +79,6 @@
   font-size: 1.2rem;
   justify-content: center;
   align-items: center;
-  color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -87,20 +90,37 @@
 .showmenu {
   display: flex;
 }
-.ButtonActive {
+.ButtonActiveDark {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
   border: none;
-  background-color: white;
+  color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 300vmin;
+  padding: 0.3rem;
+  font-size: 3vmin;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+.ButtonActiveLight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: white;
   color: black;
   cursor: pointer;
   border-radius: 300vmin;
   padding: 0.3rem;
   font-size: 3vmin;
-  transition: background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
 }
-.ButtonDisable {
+.ButtonDisableDark {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,12 +131,37 @@
   padding: 0.3rem;
   font-size: 3vmin;
   transition: transform 0.3s ease-in-out;
-  transform: scale(0.9);
 }
-.buttonContainer {
+.ButtonDisableLight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: 0.3rem;
+  font-size: 3vmin;
+  transition: transform 0.3s ease-in-out;
+ 
+}
+.buttonContainerDark {
+  position: absolute;
+  top: 20%;
+  right: 0.5%;
   display: flex;
   flex-direction: row;
-  border: 0.25vmin solid white;
+  border: 0.05vmin solid white;
+  border-radius: 300vmin;
+  gap: 1vmin;
+}
+.buttonContainerLight {
+  position: absolute;
+  top: 20%;
+  right: 0.5%;
+  display: flex;
+  flex-direction: row;
+  border: 0.05vmin solid black;
   border-radius: 300vmin;
   gap: 1vmin;
 }

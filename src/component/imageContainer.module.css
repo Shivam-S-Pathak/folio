@@ -5,6 +5,7 @@
   justify-content: center;
   background-color: #ffffff;
   padding-bottom: 2rem;
+  
 }
 .headerContainerDark {
   padding-top: 1.5rem;
@@ -14,6 +15,7 @@
   background-color: #272838;
   background-color: #121319;
   padding-bottom: 2rem;
+
 }
 .headerContainerBlur {
   user-select: none;
@@ -23,12 +25,12 @@
   transition: all 0.3s ease-in-out;
 }
 .imageBox {
-  width: 97%;
+  width: 99%;
   background-image: url("/background_img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 3vmin;
+ 
 }
 .blurred {
   width: 100%;
@@ -41,6 +43,7 @@
   backdrop-filter: blur(7px);
   transition: all 0.3s ease;
   padding: 1.5rem 0 1.5rem 0;
+ 
 }
 
 .dp {
