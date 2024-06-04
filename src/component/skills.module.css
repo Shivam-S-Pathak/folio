@@ -219,6 +219,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #69f6c0;
   color: #69f6c0;
+ 
 }
 .techDjango:hover {
   background-color: #69f6c0;
@@ -235,6 +236,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #82c378;
   color: #82c378;
+  
 }
 .techNode:hover {
   background-color: #82c378;
@@ -251,6 +253,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #f0db4f;
   color: #f0db4f;
+
 }
 .techExpress:hover {
   background-color: #f0db4f;

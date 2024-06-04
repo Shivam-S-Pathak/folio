@@ -37,9 +37,8 @@
   border-radius: 0.5rem;
   overflow: hidden;
   backface-visibility: hidden;
-  background-color: beige;
+  background-color:white;
   transform: rotateY(180deg);
-  color: black;
 }
 .backFaceLight {
   position: absolute;
@@ -55,7 +54,6 @@
   overflow: hidden;
   backface-visibility: hidden;
   background-color: rgb(0, 0, 0);
-  color: white;
   transform: rotateY(180deg);
 }
 
@@ -67,6 +65,10 @@ background-color: #5807fb;
   padding: 1rem;
   color: #E7ECEF;
   border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+.linkDark:hover{
+  background-color: #3f05b4;
 }
 .linkLight {
   background-color: #0F7173;
@@ -76,8 +78,11 @@ background-color: #5807fb;
   padding: 1rem;
   color: #E7ECEF;
   border-radius: 0.5rem;
+  transition: all 0.2s ease;
 }
-
+.linkLight:hover{
+  background-color: #035657;
+}
 .imgContainer {
   height: 17rem;
   width: 100%;

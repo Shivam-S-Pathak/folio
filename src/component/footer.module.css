@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@
     height: 30vh;
     background-image: url('/background_img.jpg');
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -119,4 +121,20 @@
     transition: all 1s ease-in-out;
     opacity: 0;
     transform: translateY(-50%);
+}
+.copyrightNote{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+    font-size: 1.5vmin;
+}
+.nameHighlight{
+    background-color: #d33636;
+    font-family: "Caveat", cursive;
+    padding: 0.5vmin;
+    font-size: 3vmin;
 }
