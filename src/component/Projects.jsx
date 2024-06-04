@@ -11,43 +11,50 @@ const Projects = ({ isDarkMode, isSideVisible }) => {
       image: "/result_img.jpg",
       description:
         "This platform displays academic results and important notices to the students made using Django, SQLite",
-      actionLink: "https://github.com/Shivam-S-Pathak/The-Scoreboard",
-    },
-    {
-      title: "Tic Tak Toe game",
-      image: "/tic_tak_toe_img.jpg",
-      description:
-        "This is a interactive game with bright and loud interface made using HTML , CSS , javaScript.",
-      actionLink: "https://github.com/Shivam-S-Pathak/Tic-Tak-Toe",
-    },
-    {
-      title: "Rock paper scissor",
-      image: "/rock_paper_scissor.jpg",
-      description:
-        "Another interactive game made using HTML , CSS , javaScript.",
-      actionLink: "https://github.com/Shivam-S-Pathak/Stone-paper-scissors",
-    },
-    {
-      title: "To-do list",
-      image: "/to_do_list_img.jpg",
-      description:
-        "this is a to do list for made your working easier made using HTML , CSS, Reactjs , javaScript , Bootstrap.",
-      actionLink: "https://github.com/Shivam-S-Pathak/to_do_list",
-    },
-    {
-      title: "Calculator",
-      image: "/calculator_img.jpg",
-      description:
-        "An interractive web calculator made using HTML , CSS, Reactjs , javaScript , Bootstrap.",
-      actionLink: "https://github.com/Shivam-S-Pathak/calculator",
+      codeLink: "https://github.com/Shivam-S-Pathak/The-Scoreboard",
+      liveLink: "",
     },
     {
       title: "Currency convertor",
       image: "/currency_convertor.jpg",
       description:
         "A currency convertor made using API , HTML , CSS , javaScript.",
-      actionLink: "https://github.com/Shivam-S-Pathak/CurrenncyConvertor",
+      codeLink: "https://github.com/Shivam-S-Pathak/CurrenncyConvertor",
+      liveLink: "https://shivam-s-pathak.github.io/CurrenncyConvertor/",
     },
+    {
+      title: "Tic Tak Toe game",
+      image: "/tic_tak_toe_img.jpg",
+      description:
+        "This is a interactive game with bright and loud interface made using HTML , CSS , javaScript.",
+      codeLink: "https://github.com/Shivam-S-Pathak/Tic-Tak-Toe",
+      liveLink: "https://shivam-s-pathak.github.io/Tic-Tak-Toe/",
+    },
+    {
+      title: "Rock paper scissor",
+      image: "/rock_paper_scissor.jpg",
+      description:
+        "Another interactive game made using HTML , CSS , javaScript.",
+      codeLink: "https://github.com/Shivam-S-Pathak/Stone-paper-scissors",
+      liveLink: "https://shivam-s-pathak.github.io/Stone-paper-scissors/",
+    },
+    {
+      title: "To-do list",
+      image: "/to_do_list_img.jpg",
+      description:
+        "this is a to do list for made your working easier made using HTML , CSS, Reactjs , javaScript , Bootstrap.",
+      codeLink: "https://github.com/Shivam-S-Pathak/to_do_list",
+      liveLink: "",
+    },
+    {
+      title: "Calculator",
+      image: "/calculator_img.jpg",
+      description:
+        "An interractive web calculator made using HTML , CSS, Reactjs , javaScript , Bootstrap.",
+      codeLink: "https://github.com/Shivam-S-Pathak/calculator",
+      liveLink: "",
+    },
+    
   ];
   const cards = CardsData.map((card) => (
     <Cards
@@ -56,7 +63,8 @@ const Projects = ({ isDarkMode, isSideVisible }) => {
       title={card.title}
       image={card.image}
       description={card.description}
-      actionLink={card.actionLink}
+      codeLink={card.codeLink}
+      liveLink={card.liveLink}
     />
   ));
   const [isResponsive, setIsResponsive] = useState(false);
@@ -102,8 +110,8 @@ const Projects = ({ isDarkMode, isSideVisible }) => {
   return (
     <>
       <div
-       ref={observerRef}
-        className= {`${isDarkMode ? Styles.projectDark : Styles.projectLight} ${
+        ref={observerRef}
+        className={`${isDarkMode ? Styles.projectDark : Styles.projectLight} ${
           isSideVisible ? Styles.projectBlur : ""
         }  `}
         id="projects"
@@ -112,13 +120,13 @@ const Projects = ({ isDarkMode, isSideVisible }) => {
           <div
             className={`${
               isDarkMode ? Styles.headingDark : Styles.headingLight
-            }  ${isVisible ? Styles.visible : Styles.notVisible }`}
+            }  ${isVisible ? Styles.visible : Styles.notVisible}`}
           >
             <h1>Projects</h1>
             {/* <hr className={Styles.line} /> */}
           </div>
           <main
-            className={ `${Styles.contentContainer} ${
+            className={`${Styles.contentContainer} ${
               isResponsive ? Styles.responsive : Styles.notResponsive
             } `}
           >

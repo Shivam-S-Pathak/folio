@@ -67,7 +67,9 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
     >
       <div className={`${Styles.mainContainer}`}>
         <div
-          className={`${isDarkMode ? Styles.headingDark : Styles.headingLight}`}
+          className={`${isDarkMode ? Styles.headingDark : Styles.headingLight} ${
+            isVisible ? Styles.visible : Styles.notVisible
+          }`}
         >
           <h1>Tech Stack</h1>
         </div>
@@ -84,29 +86,27 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
             <label className={Styles.Techtitles}>Frontend</label>
             <article className={Styles.technologyContainer}>
               <label className={Styles.techHTML}>
-                {" "}
-                <IoLogoHtml5 style={{ fontSize: "500%" }} />
+                <IoLogoHtml5 style={{ fontSize: "14vmin" }} />
                 HTML
               </label>
               <label className={Styles.techCSS}>
-                {" "}
-                <FaCss3Alt style={{ fontSize: "500%" }} />
+                <FaCss3Alt style={{ fontSize: "14vmin" }} />
                 CSS
               </label>
               <label className={Styles.techJS}>
-                <IoLogoJavascript style={{ fontSize: "500%" }} />
+                <IoLogoJavascript style={{ fontSize: "14vmin" }} />
                 javaScript
               </label>
               <label className={Styles.techTailwind}>
-                <SiTailwindcss style={{ fontSize: "500%" }} />
+                <SiTailwindcss style={{ fontSize: "14vmin" }} />
                 Tailwind
               </label>
               <label className={Styles.techBootstrap}>
-                <FaBootstrap style={{ fontSize: "500%" }} />
+                <FaBootstrap style={{ fontSize: "14vmin" }} />
                 Bootstrap
               </label>
               <label className={Styles.techReact}>
-                <RiReactjsFill style={{ fontSize: "500%" }} />
+                <RiReactjsFill style={{ fontSize: "14vmin" }} />
                 React.js
               </label>
             </article>
@@ -119,15 +119,16 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
             <label className={Styles.Techtitles}>Backend</label>
             <article className={Styles.technologyContainer}>
               <label className={Styles.techDjango}>
-                <SiDjango style={{ fontSize: "500%" }} />
+                <SiDjango style={{ fontSize: "14vmin" }} />
                 Django
               </label>
+
               <label className={Styles.techNode}>
-                <FaNode style={{ fontSize: "500%" }} />
+                <FaNode style={{ fontSize: "14vmin" }} />
                 Node.js
               </label>
               <label className={Styles.techExpress}>
-                <SiExpress style={{ fontSize: "500%" }} />
+                <SiExpress style={{ fontSize: "14vmin" }} />
                 Express.js
               </label>
             </article>
@@ -140,19 +141,19 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
             <label className={Styles.Techtitles}>Database</label>
             <article className={Styles.technologyContainer}>
               <label className={Styles.tecMySQLite}>
-                <SiSqlite style={{ fontSize: "500%" }} />
+                <SiSqlite style={{ fontSize: "14vmin" }} />
                 SQLite
               </label>
               <label className={Styles.techMongo}>
-                <BiLogoMongodb style={{ fontSize: "500%" }} />
+                <BiLogoMongodb style={{ fontSize: "14vmin" }} />
                 MongoDB
               </label>
               <label className={Styles.techMySQL}>
-                <GrMysql style={{ fontSize: "500%" }} />
+                <GrMysql style={{ fontSize: "14vmin" }} />
                 MySQL
               </label>
               <label className={Styles.techPostgres}>
-                <DiPostgresql style={{ fontSize: "500%" }} />
+                <DiPostgresql style={{ fontSize: "14vmin" }} />
                 PostgresSQL
               </label>
             </article>

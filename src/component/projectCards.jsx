@@ -30,18 +30,15 @@ const Cards = (props) => {
   }, []);
   return (
     <>
-      <a
+      <div
         ref={observerRef}
-        href={props.actionLink}
-        className={`${
-          props.isDarkMode ? Styles.anchorLinkDark : Styles.anchorLinkLight
-        } ${isVisible ? Styles.visible : Styles.notVisible}`}
+        className={`${props.isDarkMode ? Styles.cardDark : Styles.cardLight} ${
+          isVisible ? Styles.visible : Styles.notVisible
+        }`}
       >
         <main
           className={
-            props.isDarkMode
-              ? Styles.mainContainerDark
-              : Styles.mainContainerLight
+            props.isDarkMode ? Styles.frontFaceDark : Styles.frontFaceLight
           }
         >
           <img
@@ -68,7 +65,23 @@ const Cards = (props) => {
             </label>
           </title>
         </main>
-      </a>
+        <div
+          className={
+            props.isDarkMode ? Styles.backFaceDark : Styles.backFaceLight
+          }
+        >
+          <a href={props.codeLink} className={Styles.linkDark}>
+            View Source code
+          </a>
+          {props.liveLink ? (
+            <a href={props.liveLink} className={Styles.linkLight}>
+              Open Live link
+            </a>
+          ) : (
+            ""
+          )}
+        </div>
+      </div>
     </>
   );
 };
