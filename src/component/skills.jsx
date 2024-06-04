@@ -1,5 +1,18 @@
 import Styles from "./skills.module.css";
 import { useEffect, useState, useRef } from "react";
+import { IoLogoHtml5 } from "react-icons/io";
+import { FaCss3Alt } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiTailwindcss } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+import { RiReactjsFill } from "react-icons/ri";
+import { SiDjango } from "react-icons/si";
+import { FaNode } from "react-icons/fa6";
+import { SiExpress } from "react-icons/si";
+import { SiSqlite } from "react-icons/si";
+import { BiLogoMongodb } from "react-icons/bi";
+import { GrMysql } from "react-icons/gr";
+import { DiPostgresql } from "react-icons/di";
 
 const Skills = ({ isDarkMode, isSideVisible }) => {
   const [isResponsive, setIsResponsive] = useState(false);
@@ -46,6 +59,7 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
 
   return (
     <main
+      ref={observerRef}
       className={`${isDarkMode ? Styles.skillsDark : Styles.skillsLight} ${
         isSideVisible ? Styles.skillsBlur : ""
       }`}
@@ -53,14 +67,11 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
     >
       <div className={`${Styles.mainContainer}`}>
         <div
-          className={`${
-            isDarkMode ? Styles.headingDark : Styles.headingLight
-          } ${isVisible ? Styles.visible : Styles.notVisible}`}
+          className={`${isDarkMode ? Styles.headingDark : Styles.headingLight}`}
         >
           <h1>Tech Stack</h1>
         </div>
         <div
-          ref={observerRef}
           className={`${Styles.contentSection} ${
             isResponsive ? Styles.responsive : Styles.notResponsive
           }`}
@@ -68,28 +79,57 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
           <section
             className={`${Styles.Frontend} ${
               isVisible ? Styles.visible : Styles.notVisible
-            } `}
+            }`}
           >
             <label className={Styles.Techtitles}>Frontend</label>
             <article className={Styles.technologyContainer}>
-              <label className={Styles.techHTML}>HTML</label>
-              <label className={Styles.techCSS}>CSS</label>
-              <label className={Styles.techJS}>javaScript</label>
-              <label className={Styles.techTailwind}>Tailwind</label>
-              <label className={Styles.techBootstrap}>Bootstrap</label>
-              <label className={Styles.techReact}>React.js</label>
+              <label className={Styles.techHTML}>
+                {" "}
+                <IoLogoHtml5 style={{ fontSize: "500%" }} />
+                HTML
+              </label>
+              <label className={Styles.techCSS}>
+                {" "}
+                <FaCss3Alt style={{ fontSize: "500%" }} />
+                CSS
+              </label>
+              <label className={Styles.techJS}>
+                <IoLogoJavascript style={{ fontSize: "500%" }} />
+                javaScript
+              </label>
+              <label className={Styles.techTailwind}>
+                <SiTailwindcss style={{ fontSize: "500%" }} />
+                Tailwind
+              </label>
+              <label className={Styles.techBootstrap}>
+                <FaBootstrap style={{ fontSize: "500%" }} />
+                Bootstrap
+              </label>
+              <label className={Styles.techReact}>
+                <RiReactjsFill style={{ fontSize: "500%" }} />
+                React.js
+              </label>
             </article>
           </section>
           <section
             className={`${Styles.Backend} ${
               isVisible ? Styles.visible : Styles.notVisible
-            } `}
+            }`}
           >
             <label className={Styles.Techtitles}>Backend</label>
             <article className={Styles.technologyContainer}>
-              <label className={Styles.techDjango}>Django</label>
-              <label className={Styles.techNode}>Node.js</label>
-              <label className={Styles.techExpress}>Express.js</label>
+              <label className={Styles.techDjango}>
+                <SiDjango style={{ fontSize: "500%" }} />
+                Django
+              </label>
+              <label className={Styles.techNode}>
+                <FaNode style={{ fontSize: "500%" }} />
+                Node.js
+              </label>
+              <label className={Styles.techExpress}>
+                <SiExpress style={{ fontSize: "500%" }} />
+                Express.js
+              </label>
             </article>
           </section>
           <section
@@ -99,10 +139,22 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
           >
             <label className={Styles.Techtitles}>Database</label>
             <article className={Styles.technologyContainer}>
-              <label className={Styles.tecMySQLite}>MySQLite</label>
-              <label className={Styles.techMongo}>MongoDB</label>
-              <label className={Styles.techMySQL}>MySQL</label>
-              <label className={Styles.techPostgres}>PostgresSQL</label>
+              <label className={Styles.tecMySQLite}>
+                <SiSqlite style={{ fontSize: "500%" }} />
+                SQLite
+              </label>
+              <label className={Styles.techMongo}>
+                <BiLogoMongodb style={{ fontSize: "500%" }} />
+                MongoDB
+              </label>
+              <label className={Styles.techMySQL}>
+                <GrMysql style={{ fontSize: "500%" }} />
+                MySQL
+              </label>
+              <label className={Styles.techPostgres}>
+                <DiPostgresql style={{ fontSize: "500%" }} />
+                PostgresSQL
+              </label>
             </article>
           </section>
         </div>

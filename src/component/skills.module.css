@@ -31,6 +31,7 @@
   flex-direction: column;
   gap: 1rem;
   padding: 0 4% 0 4%;
+  transition: all 0.3s ease-in-out;
 }
 .headingDark {
   text-align: left;
@@ -52,87 +53,76 @@
   border-color: white;
 }
 .contentSection {
-    display: flex;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 5vmin;
 }
 .responsive {
   justify-content: center;
   align-items: center;
 }
 .notResponsive {
- 
   justify-content: left;
   align-items: left;
 }
 .Frontend {
-  width: 24rem;
-  border-radius: 0.8rem;
+  width: 100vmin;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  transition: all 0.3s ease-in-out;
-  margin: 2%;
+  gap: 4vmin;
+  border-radius: 0.8rem;
+  padding: 2%;
   background-color: black;
-  box-shadow:  9px 10px 18px 0px rgb(0, 85, 241);
-
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  box-shadow: 9px 10px 18px 0px rgb(0, 85, 241);
 }
 .Backend {
-  width: 24rem;
-  border-radius: 0.8rem;
-  background-color: black;
-  box-shadow:  9px 10px 18px 0px rgb(0, 85, 241);
+  width: 100vmin;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 2%;
-  padding-bottom: 1%;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  gap: 4vmin;
+  border-radius: 0.8rem;
+  padding: 2%;
+  background-color: black;
+  box-shadow: 9px 10px 18px 0px rgb(0, 85, 241);
 }
 .Database {
-  width: 24rem;
-  /* background-image: linear-gradient(to right, rgb(9, 9, 98), rgb(87, 13, 87)); */
-  background-color: black;
-  box-shadow:  9px 10px 18px 0px rgb(0, 85, 241);
-  border-radius: 0.8rem;
+  width: 100vmin;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 2%;
-  padding-bottom: 1%;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  gap: 4vmin;
+  border-radius: 0.8rem;
+  padding: 2%;
+  background-color: black;
+  box-shadow: 9px 10px 18px 0px rgb(0, 85, 241);
 }
 .Techtitles {
   color: rgb(243, 243, 243);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 130%;
+  font-size: 150%;
   padding: 1.5vmin 1.5vmin 1.5vmin 4vmin;
-  width: 100%;
   border-radius: 0.8rem 0.8rem 0 0;
 }
 .technologyContainer {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 3vmin;
-  padding: 5%;
+  gap: 2vmin;
 }
 .techHTML {
-  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
   padding: 2%;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #e34c26;
   color: #e34c26;
- 
 }
 .techHTML:hover {
   background-color: #e34c26;
@@ -141,13 +131,15 @@
 }
 
 .techCSS {
-  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
   padding: 2%;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #5a7bfe;
   color: #5a7bfe;
-
 }
 .techCSS:hover {
   background-color: #5a7bfe;
@@ -155,13 +147,15 @@
   transform: rotate(0);
 }
 .techJS {
-  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
   padding: 2%;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #f0db4f;
   color: #f0db4f;
-
 }
 .techJS:hover {
   background-color: #f0db4f;
@@ -169,13 +163,15 @@
   transform: rotate(0);
 }
 .techTailwind {
-  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
   padding: 2%;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #18adde;
   color: #18adde;
-  
 }
 .techTailwind:hover {
   background-color: #18adde;
@@ -183,13 +179,15 @@
   transform: rotate(0);
 }
 .techBootstrap {
-  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
   padding: 2%;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #ac7cf4;
   color: #ac7cf4;
-  
 }
 .techBootstrap:hover {
   background-color: #ac7cf4;
@@ -197,13 +195,15 @@
   transform: rotate(0);
 }
 .techReact {
-  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
   padding: 2%;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #61dbfb;
   color: #61dbfb;
-  
 }
 .techReact:hover {
   background-color: #61dbfb;
@@ -212,7 +212,10 @@
 }
 
 .techDjango {
-  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
   padding: 2%;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -225,13 +228,15 @@
   transform: rotate(0);
 }
 .techNode {
-  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
   padding: 2%;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #82c378;
   color: #82c378;
- 
 }
 .techNode:hover {
   background-color: #82c378;
@@ -239,7 +244,10 @@
   transform: rotate(0);
 }
 .techExpress {
-  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
   padding: 2%;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -252,13 +260,15 @@
   transform: rotate(0);
 }
 .tecMySQLite {
-  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
   padding: 2%;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #7393ff;
   color: #7393ff;
-  
 }
 .tecMySQLite:hover {
   background-color: #7393ff;
@@ -266,13 +276,15 @@
   transform: rotate(0);
 }
 .techMongo {
-  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
   padding: 2%;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #00ed64;
   color: #00ed64;
- 
 }
 .techMongo:hover {
   background-color: #00ed64;
@@ -280,13 +292,15 @@
   transform: rotate(0);
 }
 .techPostgres {
-  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
   padding: 2%;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #9392bd;
   color: #9392bd;
- 
 }
 .techPostgres:hover {
   background-color: #9392bd;
@@ -294,26 +308,28 @@
   transform: rotate(0);
 }
 .techMySQL {
-  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
   padding: 2%;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #f29111;
   color: #f29111;
-  
 }
 .techMySQL:hover {
   background-color: #f29111;
   color: #00758f;
   transform: rotate(0);
 }
-.visible{
+.visible {
   transition: transform 1s ease-out;
-    /* transform: translateY(0); */
-    opacity:1;
+  /* transform: translateY(0); */
+  opacity: 1;
 }
-.notVisible{
+.notVisible {
   transition: transform 1s ease-out;
-    opacity: 0;
-    transform: translateX(-50%);
+  opacity: 0;
+  transform: translateX(-50%);
 }
