@@ -1,11 +1,6 @@
 import styles from "./navigationBar.module.css";
 import { RxCross2 } from "react-icons/rx";
 import { HiOutlineMenu } from "react-icons/hi";
-import { GrHomeRounded } from "react-icons/gr";
-import { GoProjectSymlink } from "react-icons/go";
-import { GrTechnology } from "react-icons/gr";
-import { RiContactsLine } from "react-icons/ri";
-import { MdConnectWithoutContact } from "react-icons/md";
 
 // import extra
 import { PiSunFill } from "react-icons/pi";
