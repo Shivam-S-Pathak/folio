@@ -43,7 +43,7 @@ const Projects = ({ isDarkMode, isSideVisible }) => {
       image: "/to_do_list_img.jpg",
       description:
         "this is a to do list for made your working easier made using HTML , CSS, Reactjs , javaScript , Bootstrap.",
-      codeLink: "https://github.com/Shivam-S-Pathak/to-do-list",
+      codeLink: "https://github.com/Shivam-S-Pathak/toDo",
       liveLink: "https://to-do-list-shivam-pathak.vercel.app/",
     },
     {
