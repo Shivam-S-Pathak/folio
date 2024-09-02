@@ -12,7 +12,7 @@ const Projects = ({ isDarkMode, isSideVisible }) => {
       description:
         "This platform displays academic results and important notices to the students made using Django, SQLite",
       codeLink: "https://github.com/Shivam-S-Pathak/The-Scoreboard",
-      liveLink: "",
+      liveLink: "https://shivampathak.pythonanywhere.com/",
     },
     {
       title: "Currency convertor",
@@ -54,7 +54,6 @@ const Projects = ({ isDarkMode, isSideVisible }) => {
       codeLink: "https://github.com/Shivam-S-Pathak/calculator",
       liveLink: "",
     },
-    
   ];
   const cards = CardsData.map((card) => (
     <Cards
