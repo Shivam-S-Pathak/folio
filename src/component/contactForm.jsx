@@ -10,30 +10,35 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
   const observerRef = useRef();
 
   const initialFormState = {
-    firstName: "",
-    lastName: "",
+    fullName: "",
     email: "",
     contactNumber: "",
     reason: "",
+    site: "portfolio",
   };
-  const [formData, setFormData] = useState({ initialFormState });
+  const [formData, setFormData] = useState(initialFormState);
+  console.log(formData);
 
   const inputRefs = useRef([]);
 
   const changeHandler = (event) => {
-    setFormData({ ...formData, [event.target.name]: event.target.value });
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
   };
 
   const submitHandler = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     emailjs
-      .sendForm("service_qguhlgq", "template_gzq53za", form.current, {
+      .send("service_qguhlgq", "template_gzq53za", formData, {
         publicKey: "b3sJrCBk7wDHXZMPT",
       })
       .then(
         () => {
           setIsSubmitting(false);
+          console.log(formData);
           alert("Thank you for contacting me😃😃!!You'll get reply ASAP");
           setFormData(initialFormState);
           inputRefs.current.forEach((input) => {
@@ -152,9 +157,11 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
           isVisible ? Styles.visible : Styles.notVisible
         }`}
       >
-        <div className={`${isDarkMode ? Styles.headerDark : Styles.headerLight} ${
-          isVisible ? Styles.visible : Styles.notVisible
-        }`}>
+        <div
+          className={`${isDarkMode ? Styles.headerDark : Styles.headerLight} ${
+            isVisible ? Styles.visible : Styles.notVisible
+          }`}
+        >
           <h1>Get in touch</h1>
         </div>
         <form
@@ -168,12 +175,12 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
             }`}
           >
             <legend className={Styles.legend}>
-              Enter your first name here *
+              Enter your Full name here *
             </legend>
             <input
               type="text"
-              name="firstName"
-              value={formData.firstName}
+              name="fullName"
+              value={formData.fullName}
               placeholder="Enter your first name here *"
               onChange={changeHandler}
               required
@@ -190,29 +197,6 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
               isDarkMode ? Styles.fieldsetDark : Styles.fieldsetLight
             }`}
           >
-            <legend className={Styles.legend}>
-              Enter your last name here *
-            </legend>
-            <input
-              type="text"
-              name="lastName"
-              value={formData.lastName}
-              placeholder="Enter your last name here *"
-              onChange={changeHandler}
-              className={
-                isDarkMode ? Styles.lastNameDark : Styles.lastNameLight
-              }
-              ref={setRef(1)}
-              autoComplete="off"
-              required
-            />
-          </fieldset>
-
-          <fieldset
-            className={`${
-              isDarkMode ? Styles.fieldsetDark : Styles.fieldsetLight
-            }`}
-          >
             <legend className={Styles.legend}>Enter your email here</legend>
             <input
               type="email"
@@ -221,7 +205,7 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
               placeholder="Enter your email here *"
               onChange={changeHandler}
               className={isDarkMode ? Styles.emailDark : Styles.emailLight}
-              ref={setRef(2)}
+              ref={setRef(1)}
               autoComplete="off"
               required
             />
@@ -242,7 +226,7 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
               placeholder="Enter your contact number here"
               onChange={changeHandler}
               className={isDarkMode ? Styles.numberDark : Styles.numberLight}
-              ref={setRef(3)}
+              ref={setRef(2)}
               autoComplete="off"
             />
           </fieldset>
@@ -261,7 +245,7 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
               placeholder="Enter the reason of contact"
               onChange={changeHandler}
               className={isDarkMode ? Styles.reasonDark : Styles.reasonLight}
-              ref={setRef(4)}
+              ref={setRef(3)}
             ></textarea>
           </fieldset>
           <button type="submit">
