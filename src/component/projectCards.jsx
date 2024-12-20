@@ -70,11 +70,21 @@ const Cards = (props) => {
             props.isDarkMode ? Styles.backFaceDark : Styles.backFaceLight
           }
         >
-          <a href={props.codeLink} className={Styles.linkDark}>
+          <a
+            href={props.codeLink}
+            className={Styles.linkDark}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             View Source code
           </a>
           {props.liveLink ? (
-            <a href={props.liveLink} className={Styles.linkLight}>
+            <a
+              href={props.liveLink}
+              className={Styles.linkLight}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Open Live link
             </a>
           ) : (
