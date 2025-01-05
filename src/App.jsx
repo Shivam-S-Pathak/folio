@@ -5,14 +5,13 @@ import Contact from "./component/contactForm";
 import Footer from "./component/footer";
 import Skills from "./component/skills";
 import SideBar from "./component/sidePanel";
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [isIconVisible, setIsIconVisible] = useState(true);
   const [isSideVisible, setIsSideVisible] = useState(false);
-  
 
   useEffect(() => {
     const resizeHandler = () => {
@@ -40,10 +39,8 @@ function App() {
   }, [isDarkMode]);
 
   const toggle = () => {
-    setIsSideVisible(!isSideVisible); // it sets the opposite value of whatever isSideVisible is holding
+    setIsSideVisible(!isSideVisible);
   };
-
-  
 
   return (
     <>
@@ -59,23 +56,14 @@ function App() {
       <ImgContainer
         isDarkMode={isDarkMode}
         isSideVisible={isSideVisible}
-       
+        isIconVisible={isIconVisible}
       ></ImgContainer>
       <Projects
         isDarkMode={isDarkMode}
         isSideVisible={isSideVisible}
-        
       ></Projects>
-      <Skills
-        isDarkMode={isDarkMode}
-        isSideVisible={isSideVisible}
-        
-      ></Skills>
-      <Contact
-        isDarkMode={isDarkMode}
-        isSideVisible={isSideVisible}
-       
-      ></Contact>
+      <Skills isDarkMode={isDarkMode} isSideVisible={isSideVisible}></Skills>
+      <Contact isDarkMode={isDarkMode} isSideVisible={isSideVisible}></Contact>
       <Footer isSideVisible={isSideVisible}></Footer>
     </>
   );

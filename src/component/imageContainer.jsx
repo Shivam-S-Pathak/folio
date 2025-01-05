@@ -1,7 +1,8 @@
 import Styles from "./imageContainer.module.css";
 import React, { useState, useEffect, useRef } from "react";
+import { RxDownload } from "react-icons/rx";
 
-const ImgContainer = ({ isDarkMode, isSideVisible }) => {
+const ImgContainer = ({ isDarkMode, isSideVisible, isIconVisible }) => {
   const [isVisibleHorizontal, setIsVisibleHorizontal] = useState(false);
   const [isVisibleVertical, setIsVisibleVertical] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
@@ -72,12 +73,18 @@ const ImgContainer = ({ isDarkMode, isSideVisible }) => {
   }, []);
   return (
     <>
-      <header ref={observerRef}
+      <header
+        ref={observerRef}
         className={`${
           isDarkMode ? Styles.headerContainerDark : Styles.headerContainerLight
         } ${isSideVisible ? Styles.headerContainerBlur : ""} `}
       >
-        <div className={`${Styles.imageBox}  ${isVisible ? Styles.visible : Styles.notVisible }`} id="home">
+        <div
+          className={`${Styles.imageBox}  ${
+            isVisible ? Styles.visible : Styles.notVisible
+          }`}
+          id="home"
+        >
           <div className={Styles.blurred}>
             <header className={Styles.dp}>
               <img
@@ -108,6 +115,24 @@ const ImgContainer = ({ isDarkMode, isSideVisible }) => {
               front-end design sensibilities and back-end development prowess. I
               enjoy the challenge of crafting beautiful user interfaces that
               seamlessly integrate with powerful functionality.
+              <br />
+              <a
+                href="src\assets\Resume_Shivam.pdf"
+                download="Shivam_Resume.pdf"
+              >
+                {isIconVisible ? (
+                  <button className={`${Styles.downloadButtonDark}`}>
+                    <div style={{ display: "flex" }}>
+                      <RxDownload
+                        style={{ fontSize: "1.5vmax", marginRight: "5px" }}
+                      />
+                      Download Resume
+                    </div>
+                  </button>
+                ) : (
+                  ""
+                )}
+              </a>
             </article>
           </div>
         </div>

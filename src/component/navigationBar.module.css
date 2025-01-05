@@ -37,7 +37,7 @@
   gap: 2%;
   width: 100%;
   transition: all 0.3s ease-in-out;
-  /* margin: 1% 0 1% 0; */
+  margin-left: 5rem;
 }
 
 .anchor {
@@ -143,7 +143,6 @@
   padding: 0.3rem;
   font-size: 3vmin;
   transition: transform 0.3s ease-in-out;
- 
 }
 .buttonContainerDark {
   position: absolute;
@@ -164,4 +163,49 @@
   border: 0.05vmin solid black;
   border-radius: 300vmin;
   gap: 1vmin;
+}
+
+.downloadButtonDark {
+  padding: 10px 15px;
+  background-color: #3308c1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+  box-shadow: -5px 5px 0px 0px rgba(255, 255, 255, 1);
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #3308c1; /* Blue */
+  }
+  25% {
+    background-color: #28a745; /* Green */
+  }
+  50% {
+    background-color: #ffc107; /* Yellow */
+  }
+  75% {
+    background-color: #dc3545; /* Red */
+  }
+  100% {
+    background-color: #3308c1; /* Back to Blue */
+  }
+}
+.downloadButtonLight {
+  padding: 10px 15px;
+  background-color: #411ac3;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  animation: color-change 2s infinite;
+  transition: transform 0.3s ease;
+  box-shadow: -5px 6px 0px 0px rgb(0, 0, 0, 1);
 }

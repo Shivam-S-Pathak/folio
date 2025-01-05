@@ -5,7 +5,6 @@
   justify-content: center;
   background-color: #ffffff;
   padding-bottom: 2rem;
-  
 }
 .headerContainerDark {
   padding-top: 1.5rem;
@@ -15,7 +14,6 @@
   background-color: #272838;
   background-color: #121319;
   padding-bottom: 2rem;
-
 }
 .headerContainerBlur {
   user-select: none;
@@ -30,7 +28,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
 }
 .blurred {
   width: 100%;
@@ -43,7 +40,6 @@
   backdrop-filter: blur(7px);
   transition: all 0.3s ease;
   padding: 1.5rem 0 1.5rem 0;
- 
 }
 
 .dp {
@@ -99,12 +95,44 @@
 .hide {
   display: none;
 }
-.visible{
+.visible {
   transition: all 1s ease-in-out;
-  opacity:1;
+  opacity: 1;
 }
-.notVisible{
+.notVisible {
   transition: all 1s ease-in-out;
   opacity: 0;
   transform: translateY(-50%);
+}
+
+.downloadButtonDark {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #3308c1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.4vmax;
+  transition: transform 0.3s ease;
+  box-shadow: -3px 3px 0px 0px rgba(255, 255, 255, 1);
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #3308c1; /* Blue */
+  }
+  25% {
+    background-color: #28a745; /* Green */
+  }
+  50% {
+    background-color: #ffc107; /* Yellow */
+  }
+  75% {
+    background-color: #dc3545; /* Red */
+  }
+  100% {
+    background-color: #3308c1; /* Back to Blue */
+  }
 }

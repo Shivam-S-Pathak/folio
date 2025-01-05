@@ -1,6 +1,7 @@
 import styles from "./navigationBar.module.css";
-import { RxCross2 } from "react-icons/rx";
+import { RxCross2, RxFontSize } from "react-icons/rx";
 import { HiOutlineMenu } from "react-icons/hi";
+import { RxDownload } from "react-icons/rx";
 
 // import extra
 import { PiSunFill } from "react-icons/pi";
@@ -48,7 +49,11 @@ const NavigationBar = ({
         } ${isDarkMode ? styles.darkMode : styles.lightMode}`}
         onClick={toggle}
       >
-        {isSideVisible ? <RxCross2  style={{color:'white'}}/> : <HiOutlineMenu />}
+        {isSideVisible ? (
+          <RxCross2 style={{ color: "white" }} />
+        ) : (
+          <HiOutlineMenu />
+        )}
       </div>
 
       <nav
@@ -130,6 +135,20 @@ const NavigationBar = ({
             }}
           >
             Social media
+          </a>
+          <a href="src\assets\Resume_Shivam.pdf" download="Shivam_Resume.pdf">
+            <button
+              className={`${
+                isDarkMode
+                  ? styles.downloadButtonDark
+                  : styles.downloadButtonLight
+              }`}
+            >
+              <div style={{ display: "flex" }}>
+                <RxDownload style={{ fontSize: "20px", marginRight: "5px" }} />
+                Download Resume
+              </div>
+            </button>
           </a>
         </div>
         <div
