@@ -136,7 +136,7 @@ const NavigationBar = ({
           >
             Social media
           </a>
-          <a href="src\assets\Resume_Shivam.pdf" download="Shivam_Resume.pdf">
+          <a href="src/assets/Resume_Shivam.pdf" download="Shivam_Resume.pdf">
             <button
               className={`${
                 isDarkMode
