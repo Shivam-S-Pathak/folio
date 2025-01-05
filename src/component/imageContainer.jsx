@@ -116,10 +116,7 @@ const ImgContainer = ({ isDarkMode, isSideVisible, isIconVisible }) => {
               enjoy the challenge of crafting beautiful user interfaces that
               seamlessly integrate with powerful functionality.
               <br />
-              <a
-                href="src\assets\Resume_Shivam.pdf"
-                download="Shivam_Resume.pdf"
-              >
+              <a href="/Resume_Shivam.pdf" download="Shivam_Resume.pdf">
                 {isIconVisible ? (
                   <button className={`${Styles.downloadButtonDark}`}>
                     <div style={{ display: "flex" }}>
