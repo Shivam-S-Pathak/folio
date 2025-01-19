@@ -13,6 +13,7 @@ import { SiSqlite } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
 import { DiPostgresql } from "react-icons/di";
+import { SiMui } from "react-icons/si";
 
 const Skills = ({ isDarkMode, isSideVisible }) => {
   const [isResponsive, setIsResponsive] = useState(false);
@@ -67,9 +68,9 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
     >
       <div className={`${Styles.mainContainer}`}>
         <div
-          className={`${isDarkMode ? Styles.headingDark : Styles.headingLight} ${
-            isVisible ? Styles.visible : Styles.notVisible
-          }`}
+          className={`${
+            isDarkMode ? Styles.headingDark : Styles.headingLight
+          } ${isVisible ? Styles.visible : Styles.notVisible}`}
         >
           <h1>Tech Stack</h1>
         </div>
@@ -79,12 +80,21 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
           }`}
         >
           <section
-            className={`${Styles.Frontend} ${
-              isVisible ? Styles.visible : Styles.notVisible
-            }`}
+            className={`${
+              isDarkMode ? Styles.FrontendDark : Styles.FrontendLight
+            } ${isVisible ? Styles.visible : Styles.notVisible}`}
           >
-            <label className={Styles.Techtitles}>Frontend</label>
+            <label
+              className={`${Styles.Techtitles}`}
+              style={{ color: isDarkMode ? "white" : "black" }}
+            >
+              Frontend
+            </label>
             <article className={Styles.technologyContainer}>
+              <label className={Styles.techReact}>
+                <RiReactjsFill style={{ fontSize: "14vmin" }} />
+                React.js
+              </label>
               <label className={Styles.techHTML}>
                 <IoLogoHtml5 style={{ fontSize: "14vmin" }} />
                 HTML
@@ -105,40 +115,23 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
                 <FaBootstrap style={{ fontSize: "14vmin" }} />
                 Bootstrap
               </label>
-              <label className={Styles.techReact}>
-                <RiReactjsFill style={{ fontSize: "14vmin" }} />
-                React.js
+              <label className={Styles.techMui}>
+                <SiMui style={{ fontSize: "14vmin" }} />
+                Material UI
               </label>
             </article>
           </section>
           <section
-            className={`${Styles.Backend} ${
-              isVisible ? Styles.visible : Styles.notVisible
-            }`}
+            className={`${
+              isDarkMode ? Styles.DatabaseDark : Styles.DatabaseLight
+            } ${isVisible ? Styles.visible : Styles.notVisible}`}
           >
-            <label className={Styles.Techtitles}>Backend</label>
-            <article className={Styles.technologyContainer}>
-              <label className={Styles.techDjango}>
-                <SiDjango style={{ fontSize: "14vmin" }} />
-                Django
-              </label>
-
-              <label className={Styles.techNode}>
-                <FaNode style={{ fontSize: "14vmin" }} />
-                Node.js
-              </label>
-              <label className={Styles.techExpress}>
-                <SiExpress style={{ fontSize: "14vmin" }} />
-                Express.js
-              </label>
-            </article>
-          </section>
-          <section
-            className={`${Styles.Database} ${
-              isVisible ? Styles.visible : Styles.notVisible
-            }`}
-          >
-            <label className={Styles.Techtitles}>Database</label>
+            <label
+              className={Styles.Techtitles}
+              style={{ color: isDarkMode ? "white" : "black" }}
+            >
+              Database
+            </label>
             <article className={Styles.technologyContainer}>
               <label className={Styles.tecMySQLite}>
                 <SiSqlite style={{ fontSize: "14vmin" }} />
@@ -155,6 +148,33 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
               <label className={Styles.techPostgres}>
                 <DiPostgresql style={{ fontSize: "14vmin" }} />
                 PostgresSQL
+              </label>
+            </article>
+          </section>
+          <section
+            className={`${
+              isDarkMode ? Styles.BackendDark : Styles.BackendLight
+            } ${isVisible ? Styles.visible : Styles.notVisible}`}
+          >
+            <label
+              className={Styles.Techtitles}
+              style={{ color: isDarkMode ? "white" : "black" }}
+            >
+              Backend
+            </label>
+            <article className={Styles.technologyContainer}>
+              <label className={Styles.techDjango}>
+                <SiDjango style={{ fontSize: "14vmin" }} />
+                Django
+              </label>
+
+              <label className={Styles.techNode}>
+                <FaNode style={{ fontSize: "14vmin" }} />
+                Node.js
+              </label>
+              <label className={Styles.techExpress}>
+                <SiExpress style={{ fontSize: "14vmin" }} />
+                Express.js
               </label>
             </article>
           </section>

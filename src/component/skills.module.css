@@ -54,9 +54,9 @@
 }
 .contentSection {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
   flex-wrap: wrap;
   gap: 5vmin;
 }
@@ -68,36 +68,61 @@
   justify-content: left;
   align-items: left;
 }
-.Frontend {
+.FrontendDark {
   display: flex;
   flex-direction: column;
   gap: 4vmin;
   border-radius: 0.8rem;
   padding: 5vmin;
-  background-color: black;
-  box-shadow: 9px 10px 18px 0px rgb(0, 85, 241);
- 
+  /* background-color: black; */
+  box-shadow: 5px 5px 5px -3px rgb(0, 85, 241);
+  /* border: solid 1px rgb(56, 121, 241); */
 }
-.Backend {
+.FrontendLight {
   display: flex;
   flex-direction: column;
   gap: 4vmin;
   border-radius: 0.8rem;
   padding: 5vmin;
-  background-color: black;
-  box-shadow: 9px 10px 18px 0px rgb(0, 85, 241);
+  /* background-color: rgb(250, 249, 249); */
+  box-shadow: 5px 5px 5px -3px rgb(0, 85, 241);
+  /* border: solid 1px rgb(0, 0, 0); */
 }
-.Database {
+
+.BackendDark {
   display: flex;
   flex-direction: column;
   gap: 4vmin;
   border-radius: 0.8rem;
   padding: 5vmin;
-  background-color: black;
-  box-shadow: 9px 10px 18px 0px rgb(0, 85, 241);
+  box-shadow: 5px 5px 5px -3px rgb(0, 85, 241);
+}
+.BackendLight {
+  display: flex;
+  flex-direction: column;
+  gap: 4vmin;
+  border-radius: 0.8rem;
+  padding: 5vmin;
+  box-shadow: 5px 5px 5px -3px rgb(0, 85, 241);
+}
+.DatabaseDark {
+  display: flex;
+  flex-direction: column;
+  gap: 4vmin;
+  border-radius: 0.8rem;
+  padding: 5vmin;
+  box-shadow: 5px 5px 5px -3px rgb(0, 85, 241);
+}
+.DatabaseLight {
+  display: flex;
+  flex-direction: column;
+  gap: 4vmin;
+  border-radius: 0.8rem;
+  padding: 5vmin;
+  box-shadow: 5px 5px 5px -3px rgb(0, 85, 241);
 }
 .Techtitles {
-  color: rgb(243, 243, 243);
+  /* color: rgb(243, 243, 243); */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 120%;
@@ -192,6 +217,22 @@
   color: #ffff;
   transform: rotate(0);
 }
+.techMui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 120%;
+  padding: 2vmin;
+  border-radius: 0.6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #3568c7;
+  color: #3568c7;
+}
+.techMui:hover {
+  background-color: #3568c7;
+  color: #ffff;
+  transform: rotate(0);
+}
 .techReact {
   display: flex;
   flex-direction: column;
@@ -219,7 +260,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #69f6c0;
   color: #69f6c0;
- 
 }
 .techDjango:hover {
   background-color: #69f6c0;
@@ -236,7 +276,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #82c378;
   color: #82c378;
-  
 }
 .techNode:hover {
   background-color: #82c378;
@@ -253,7 +292,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #f0db4f;
   color: #f0db4f;
-
 }
 .techExpress:hover {
   background-color: #f0db4f;
