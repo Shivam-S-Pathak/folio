@@ -174,7 +174,9 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
               isDarkMode ? Styles.fieldsetDark : Styles.fieldsetLight
             }`}
           >
-            <legend className={Styles.legend}>
+            <legend
+              className={Styles.legend}
+            >
               Enter your Full name here *
             </legend>
             <input
@@ -197,7 +199,12 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
               isDarkMode ? Styles.fieldsetDark : Styles.fieldsetLight
             }`}
           >
-            <legend className={Styles.legend}>Enter your email here</legend>
+            <legend
+              className={Styles.legend}
+              
+            >
+              Enter your email here *
+            </legend>
             <input
               type="email"
               name="email"
@@ -216,7 +223,10 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
               isDarkMode ? Styles.fieldsetDark : Styles.fieldsetLight
             }`}
           >
-            <legend className={Styles.legend}>
+            <legend
+              className={Styles.legend}
+             
+            >
               Enter your contact number here
             </legend>
             <input
@@ -236,7 +246,10 @@ const Contact = ({ isDarkMode, isSideVisible }) => {
               isDarkMode ? Styles.fieldsetDark : Styles.fieldsetLight
             }`}
           >
-            <legend className={Styles.legend}>
+            <legend
+              className={Styles.legend}
+            
+            >
               Enter the reason of contact
             </legend>
             <textarea

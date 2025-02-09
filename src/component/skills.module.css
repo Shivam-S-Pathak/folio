@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: left;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #121319;
   padding-bottom: 4rem;
 }

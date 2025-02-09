@@ -1,265 +1,249 @@
 .formContainerDark {
-    width: 100%;
-    background-color: #272838;
-    background-color: #121319;
+  width: 100%;
+  background-color: #272838;
+  background-color: #121319;
 }
 .formContainerLight {
-    width: 100%;
-    background-color: #ffffff;
+  width: 100%;
+  background-color: #ffffff;
 }
-.formContainerBlur{
-    user-select: none;
-    pointer-events: none;
-    opacity: 0.8;
-    filter: blur(5px);
-    transition: all 0.3s ease-in-out;
+.formContainerBlur {
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.8;
+  filter: blur(5px);
+  transition: all 0.3s ease-in-out;
 }
 
 .headerDark {
-    width:92vmin;
-    padding:1rem;
-    text-align: left;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 0.8rem;
-    color: white;
-
+  width: 92vmin;
+  padding: 1rem;
+  text-align: left;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 0.8rem;
+  color: white;
 }
 .headerLight {
-    width:92vmin;
-    padding:1rem;
-    text-align: left;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 0.8rem;
-    color: rgb(5, 5, 5);
-
+  width: 92vmin;
+  padding: 1rem;
+  text-align: left;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(5, 5, 5);
 }
 
 .formItems {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 3%;
-    padding: 1rem 0 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3%;
+  padding: 1rem 0 4rem 0;
 }
 
-.contentContainer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.contentContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.fieldsetDark{
-    margin: 1%;
-    width:90vmin;
-    color:white;
-    border-radius:2vmin;
-    background-color: #bfc3ba1d;
-    border-color: #888c84a9;
-    border: none;
-   
+.fieldsetDark {
+  margin: 1%;
+  width: 90vmin;
+  color: #bfc3baa9;
+  border-radius: 5vmin;
+  border-color: #bfc3baa9;
+  font-size: 1rem;
 }
-.fieldsetLight{
-    margin: 1%;
-    width:90vmin;
-    color:white;
-    border-radius:2vmin;
-    background-color: #121c4fdc;
-    border-color: #888c84a9;
-    border: none;
-    
+.fieldsetLight {
+  margin: 1%;
+  width: 90vmin;
+  color: #bfc3baa9;
+  border-radius: 5vmin;
+  border-color: #bfc3baa9;
 }
 
-.legend{
-    display: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    animation: slideup 0.3s ease-in-out;
-    font-size: 0.8rem;
-    margin-left: 2%;
+.legend {
+  display: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  animation: slideup 0.3s ease-in-out;
+  font-size: 1rem;
+  margin-left: 5%;
+  padding: 0 1% 0 1%;
+  color: rgb(12, 136, 238);
 }
-@keyframes slideup{
-    from {
-        transform: translateY(100%);
-        font-size: 1rem;
-    }
+@keyframes slideup {
+  from {
+    transform: translateY(100%);
+    font-size: 1rem;
+  }
 
-    to {
-        transform: translateY(0);
-    }
-}
-
-.emailDark , .numberDark , .firstNameDark , .lastNameDark{
-    width: 90%;
-    height: 2vmax;
-    font-size: 1.2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:transparent;
-    border: none;
-    color: white;
-    outline: none;
-    margin: 1rem;
-    padding:1%;
-
-}
-.firstNameLight , .lastNameLight , .emailLight , .numberLight{
-    width: 90%;
-    height: 2vmax;
-    font-size: 1.2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:transparent;
-    border: none;
-    color: #121c4fdc;
-    outline: none;
-    margin: 1rem;
-    padding:1%;
-
+  to {
+    transform: translateY(0);
+  }
 }
 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
+.emailDark,
+.numberDark,
+.firstNameDark,
+.lastNameDark {
+  width: 90%;
+  height: 2vmax;
+  font-size: 1.2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  outline: none;
+  margin: 1rem;
+  padding: 1%;
+}
+.firstNameLight,
+.lastNameLight,
+.emailLight,
+.numberLight {
+  width: 90%;
+  height: 2vmax;
+  font-size: 1.2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  border: none;
+  color: #050505dc;
+  outline: none;
+  margin: 1rem;
+  padding: 1%;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-
-input[type=text]:focus::placeholder{
-    opacity: 0;
+input[type="text"]:focus::placeholder {
+  opacity: 0;
 }
-input[type=email]:focus::placeholder{
-    opacity: 0;
+input[type="email"]:focus::placeholder {
+  opacity: 0;
 }
-input[type=number]:focus::placeholder{
-    opacity: 0;
+input[type="number"]:focus::placeholder {
+  opacity: 0;
 }
-textarea:focus::placeholder{
-    opacity: 0;
-}
-
-textarea::placeholder {
-    color: white;
-    font-size: 1rem;
+textarea:focus::placeholder {
+  opacity: 0;
 }
 
-input[type='text']::placeholder {
-    color: white;
-    font-size: 1rem;
-}
-
-
-input[type='number']::placeholder {
-    color: white;
-    font-size: 1rem;
-}
-
-input[type='email']::placeholder {
-    color: white;
-    font-size: 1rem;
-}
 .reasonDark {
-    width: 90%;
-    height: 16vmin;
-    grid-row: 2;
-    resize:none;
-    font-size: 1.2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:transparent;
-    border: none;
-    color: white;
-    outline: none;
-    margin: 1rem;
-    padding:1%;
+  width: 90%;
+  height: 16vmin;
+  grid-row: 2;
+  resize: none;
+  font-size: 1.2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  margin: 1rem;
+  padding: 1%;
 }
 .reasonLight {
-    width: 90%;
-    height: 16vmin;
-    grid-row: 2;
-    resize:none;
-    font-size: 1.2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:transparent;
-    border: none;
-    color: #121c4fdc;
-    outline: none;
-    margin: 1rem;
-    padding:1%;
+  width: 90%;
+  height: 16vmin;
+  grid-row: 2;
+  resize: none;
+  font-size: 1.2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  border: none;
+  color: #121c4fdc;
+  outline: none;
+  margin: 1rem;
+  padding: 1%;
 }
 
-  .reasonDark::-webkit-scrollbar { 
-    width: 8px; 
-    background-color:transparent; 
-  }
-  
-  .reasonDark::-webkit-scrollbar-thumb { 
-    background-color: #bfc3baa9;
-    border-radius: 20px;
-  }
-  
-
-  .reasonDark::-webkit-scrollbar-thumb:hover {
-    background-color: #92bcea;
-    cursor:pointer;
-  }
-  .reasonLight::-webkit-scrollbar { 
-    width: 8px; 
-    background-color:transparent; 
-  }
-  
-  .reasonLight::-webkit-scrollbar-thumb { 
-    background-color: #121c4fdc;
-    border-radius: 20px;
-  }
-  
-
-  .reasonLight::-webkit-scrollbar-thumb:hover {
-    background-color: #208afa;
-    cursor:pointer;
-  }
-
-button[type=submit] {
-    padding: 1% 4% 1% 4%;
-    border-radius: 20vmin;
-    margin-top: 1.3rem;
-    font-size: 3vmin;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image:linear-gradient(to left , #001F54 , #034078);
-    border: 1px solid white;
-    color: #ffff;
+.reasonDark::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
 }
 
-button[type=submit]:hover {
-    background-image:linear-gradient(to right , #001F54 , #034078);
-    border: 1px solid white;
-    color: #ffff;
-    cursor: pointer;
-    outline: none;
+.reasonDark::-webkit-scrollbar-thumb {
+  background-color: #bfc3baa9;
+  border-radius: 20px;
 }
 
-.focusedDark{
-    display: block;
-    color:#bfc3baa9;
-    background-color: transparent;
-    border: 1px solid #bfc3baa9;
+.reasonDark::-webkit-scrollbar-thumb:hover {
+  background-color: #92bcea;
+  cursor: pointer;
 }
-.focusedLight{
-    display: block;
-    color:#121c4fdc;
-    background-color: transparent;
-    border: 1px solid #121c4fdc;
+.reasonLight::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
 }
-.disabled{
-    user-select: none;
-    pointer-events: none;
-    opacity: 0.6;
+
+.reasonLight::-webkit-scrollbar-thumb {
+  background-color: #121c4fdc;
+  border-radius: 20px;
 }
-.visible{
-    transition: transform 1s ease-in-out;
-    transform: translateX(0);
-    opacity:1;
+
+.reasonLight::-webkit-scrollbar-thumb:hover {
+  background-color: #208afa;
+  cursor: pointer;
 }
-.notVisible{
-    transition: transform 1s ease-in-out;
-    opacity: 0;
-    transform: translateX(-50%);
+
+button[type="submit"] {
+  padding: 1% 4% 1% 4%;
+  border-radius: 20vmin;
+  margin-top: 1.3rem;
+  font-size: 3vmin;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to left, #001f54, #034078);
+  border: 1px solid white;
+  color: #ffff;
+}
+
+button[type="submit"]:hover {
+  background-image: linear-gradient(to right, #001f54, #034078);
+  border: 1px solid white;
+  color: #ffff;
+  cursor: pointer;
+  outline: none;
+}
+
+.focusedDark {
+  display: block;
+  color: #bfc3baa9;
+  background-color: transparent;
+  border: 1px solid rgb(12, 136, 238);
+}
+.focusedLight {
+  display: block;
+  color: #d5d5d7dc;
+  background-color: transparent;
+  border: 1px solid rgb(12, 136, 238);
+}
+.disabled {
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.6;
+}
+.visible {
+  transition: transform 1s ease-in-out;
+  transform: translateX(0);
+  opacity: 1;
+}
+.notVisible {
+  transition: transform 1s ease-in-out;
+  opacity: 0;
+  transform: translateX(-50%);
 }
