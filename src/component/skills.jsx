@@ -90,33 +90,34 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
             >
               Frontend
             </label>
+            <hr className={Styles.techTitleUnderline} />
             <article className={Styles.technologyContainer}>
               <label className={Styles.techReact}>
-                <RiReactjsFill style={{ fontSize: "14vmin" }} />
+                <RiReactjsFill style={{ fontSize: "4rem" }} />
                 React.js
               </label>
               <label className={Styles.techHTML}>
-                <IoLogoHtml5 style={{ fontSize: "14vmin" }} />
+                <IoLogoHtml5 style={{ fontSize: "4rem" }} />
                 HTML
               </label>
               <label className={Styles.techCSS}>
-                <FaCss3Alt style={{ fontSize: "14vmin" }} />
+                <FaCss3Alt style={{ fontSize: "4rem" }} />
                 CSS
               </label>
               <label className={Styles.techJS}>
-                <IoLogoJavascript style={{ fontSize: "14vmin" }} />
+                <IoLogoJavascript style={{ fontSize: "4rem" }} />
                 javaScript
               </label>
               <label className={Styles.techTailwind}>
-                <SiTailwindcss style={{ fontSize: "14vmin" }} />
+                <SiTailwindcss style={{ fontSize: "4rem" }} />
                 Tailwind
               </label>
               <label className={Styles.techBootstrap}>
-                <FaBootstrap style={{ fontSize: "14vmin" }} />
+                <FaBootstrap style={{ fontSize: "4rem" }} />
                 Bootstrap
               </label>
               <label className={Styles.techMui}>
-                <SiMui style={{ fontSize: "14vmin" }} />
+                <SiMui style={{ fontSize: "4rem" }} />
                 Material UI
               </label>
             </article>
@@ -132,21 +133,22 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
             >
               Database
             </label>
+            <hr className={Styles.techTitleUnderline} />
             <article className={Styles.technologyContainer}>
               <label className={Styles.tecMySQLite}>
-                <SiSqlite style={{ fontSize: "14vmin" }} />
+                <SiSqlite style={{ fontSize: "4rem" }} />
                 SQLite
               </label>
               <label className={Styles.techMongo}>
-                <BiLogoMongodb style={{ fontSize: "14vmin" }} />
+                <BiLogoMongodb style={{ fontSize: "4rem" }} />
                 MongoDB
               </label>
               <label className={Styles.techMySQL}>
-                <GrMysql style={{ fontSize: "14vmin" }} />
+                <GrMysql style={{ fontSize: "4rem" }} />
                 MySQL
               </label>
               <label className={Styles.techPostgres}>
-                <DiPostgresql style={{ fontSize: "14vmin" }} />
+                <DiPostgresql style={{ fontSize: "4rem" }} />
                 PostgresSQL
               </label>
             </article>
@@ -162,18 +164,19 @@ const Skills = ({ isDarkMode, isSideVisible }) => {
             >
               Backend
             </label>
+             <hr className={Styles.techTitleUnderline} />
             <article className={Styles.technologyContainer}>
               <label className={Styles.techDjango}>
-                <SiDjango style={{ fontSize: "14vmin" }} />
+                <SiDjango style={{ fontSize: "4rem" }} />
                 Django
               </label>
 
               <label className={Styles.techNode}>
-                <FaNode style={{ fontSize: "14vmin" }} />
+                <FaNode style={{ fontSize: "4rem" }} />
                 Node.js
               </label>
               <label className={Styles.techExpress}>
-                <SiExpress style={{ fontSize: "14vmin" }} />
+                <SiExpress style={{ fontSize: "4rem" }} />
                 Express.js
               </label>
             </article>

@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: left;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #ffffff;
   padding-bottom: 4rem;
 }
@@ -39,7 +39,7 @@
     "Lucida Sans", Arial, sans-serif;
   font-size: 0.8rem;
   color: white;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 .headingLight {
   text-align: left;
@@ -47,16 +47,14 @@
     "Lucida Sans", Arial, sans-serif;
   font-size: 0.8rem;
   color: black;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 .line {
   border-color: white;
 }
 .contentSection {
   display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 5vmin;
 }
@@ -73,9 +71,9 @@
   flex-direction: column;
   gap: 4vmin;
   border-radius: 0.8rem;
-  padding: 5vmin;
+  padding: 2rem;
   /* background-color: black; */
-  box-shadow: 5px 5px 5px -3px rgb(0, 85, 241);
+  box-shadow: 2px 2px 2px 5px rgb(0, 85, 241);
   /* border: solid 1px rgb(56, 121, 241); */
 }
 .FrontendLight {
@@ -83,9 +81,9 @@
   flex-direction: column;
   gap: 4vmin;
   border-radius: 0.8rem;
-  padding: 5vmin;
+  padding: 2rem;
   /* background-color: rgb(250, 249, 249); */
-  box-shadow: 5px 5px 5px -3px rgb(0, 85, 241);
+  box-shadow: 2px 2px 2px 5px rgb(0, 85, 241);
   /* border: solid 1px rgb(0, 0, 0); */
 }
 
@@ -94,54 +92,58 @@
   flex-direction: column;
   gap: 4vmin;
   border-radius: 0.8rem;
-  padding: 5vmin;
-  box-shadow: 5px 5px 5px -3px rgb(0, 85, 241);
+  padding: 2rem;
+  box-shadow: 2px 2px 2px 5px rgb(0, 85, 241);
 }
 .BackendLight {
   display: flex;
   flex-direction: column;
   gap: 4vmin;
   border-radius: 0.8rem;
-  padding: 5vmin;
-  box-shadow: 5px 5px 5px -3px rgb(0, 85, 241);
+  padding: 2rem;
+  box-shadow: 2px 2px 2px 5px rgb(0, 85, 241);
 }
 .DatabaseDark {
   display: flex;
   flex-direction: column;
   gap: 4vmin;
   border-radius: 0.8rem;
-  padding: 5vmin;
-  box-shadow: 5px 5px 5px -3px rgb(0, 85, 241);
+  padding: 2rem;
+  box-shadow: 2px 2px 2px 5px rgb(0, 85, 241);
 }
 .DatabaseLight {
   display: flex;
   flex-direction: column;
   gap: 4vmin;
   border-radius: 0.8rem;
-  padding: 5vmin;
-  box-shadow: 5px 5px 5px -3px rgb(0, 85, 241);
+  padding: 2rem;
+  box-shadow: 2px 2px 2px 5px rgb(0, 85, 241);
 }
 .Techtitles {
   /* color: rgb(243, 243, 243); */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 120%;
-  padding: 1.5vmin 1.5vmin 1.5vmin 4vmin;
+  font-size: 1.2rem;
+  padding: 1.5vmin 1.5vmin 0vmin 4vmin;
   border-radius: 0.8rem 0.8rem 0 0;
 }
+.techTitleUnderline {
+  border: none;
+  height: 2px; /* Adjust thickness as needed */
+  background-color: rgb(0, 85, 241);
+}
 .technologyContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2vmin;
+  /* width: 100%; */
 }
 .techHTML {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #e34c26;
@@ -157,8 +159,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
+
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #5a7bfe;
@@ -173,8 +176,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #f0db4f;
@@ -189,8 +192,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #18adde;
@@ -205,8 +208,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #ac7cf4;
@@ -221,8 +224,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #3568c7;
@@ -237,8 +240,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
+
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #61dbfb;
@@ -254,8 +258,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #69f6c0;
@@ -270,8 +274,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #82c378;
@@ -286,8 +290,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #f0db4f;
@@ -302,8 +306,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #7393ff;
@@ -318,8 +322,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #00ed64;
@@ -334,8 +338,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #9392bd;
@@ -350,8 +354,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 120%;
-  padding: 2vmin;
+  font-size: 1rem;
+  padding: 0.8rem;
   border-radius: 0.6vmin;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #f29111;
